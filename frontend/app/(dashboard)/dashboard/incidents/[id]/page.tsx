@@ -99,7 +99,7 @@ export default function IncidentDetailPage() {
           <h1 className="text-2xl font-bold">{incident.title}</h1>
           <p className="text-sm text-muted-foreground mt-1">
             Created {format(new Date(incident.created_at), "PPpp")}
-            {incident.affected_services.length > 0 &&
+            {(incident.affected_services ?? []).length > 0 &&
               ` · Services: ${incident.affected_services.join(", ")}`}
           </p>
         </div>
@@ -167,15 +167,15 @@ export default function IncidentDetailPage() {
             </div>
           )}
 
-          {incident.citations.length > 0 && (
+          {(incident.citations ?? []).length > 0 && (
             <div className="mt-4 pt-4 border-t border-border/60">
               <h4 className="text-sm font-medium mb-2 flex items-center gap-1">
                 <FileText className="h-3 w-3" /> Citations
               </h4>
               <ul className="space-y-2">
-                {incident.citations.map((c, i) => (
+                {(incident.citations ?? []).map((c, i) => (
                   <li key={i} className="text-sm text-muted-foreground border-l-2 border-cyan-accent/30 pl-3">
-                    <span className="font-medium text-foreground">{c.title}</span>
+                    <span className="font-medium text-foreground">{c.title ?? "Source"}</span>
                     {c.excerpt && <p className="text-xs mt-0.5">{c.excerpt}</p>}
                   </li>
                 ))}
@@ -190,28 +190,38 @@ export default function IncidentDetailPage() {
             <Clock className="h-5 w-5 text-cyan-accent" />
             <h3 className="font-semibold">Timeline</h3>
           </div>
-          {incident.timeline.length > 0 ? (
+          {(incident.timeline ?? []).length > 0 ? (
             <div className="space-y-4">
-              {incident.timeline.map((event, i) => (
+              {(incident.timeline ?? []).map((event, i) => {
+                const title =
+                  event.title ??
+                  (event as { event?: string }).event ??
+                  event.event_type ??
+                  "Event";
+                const ts =
+                  event.timestamp ??
+                  (event as { at?: string }).at ??
+                  new Date().toISOString();
+                return (
                 <div key={i} className="flex gap-3">
                   <div className="flex flex-col items-center">
                     <div className="h-2 w-2 rounded-full bg-cyan-accent mt-2" />
-                    {i < incident.timeline.length - 1 && (
+                    {i < (incident.timeline ?? []).length - 1 && (
                       <div className="w-px flex-1 bg-border/60 mt-1" />
                     )}
                   </div>
                   <div className="pb-4">
-                    <p className="text-sm font-medium">{event.title}</p>
+                    <p className="text-sm font-medium capitalize">{title}</p>
                     {event.description && (
                       <p className="text-xs text-muted-foreground mt-0.5">{event.description}</p>
                     )}
                     <p className="text-xs text-muted-foreground mt-1 font-mono">
-                      {format(new Date(event.timestamp), "PPp")}
+                      {format(new Date(ts), "PPp")}
                       {event.actor && ` · ${event.actor}`}
                     </p>
                   </div>
                 </div>
-              ))}
+              );})}
             </div>
           ) : (
             <p className="text-sm text-muted-foreground">No timeline events recorded</p>

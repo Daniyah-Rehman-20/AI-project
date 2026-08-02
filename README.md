@@ -58,6 +58,16 @@
 
 ---
 
+## Live Demo
+
+Public tunnels (while running):
+
+- **App:** https://blvd-common-fought-bloomberg.trycloudflare.com
+- **API Docs:** https://stakeholders-moon-cambridge-addressing.trycloudflare.com/docs
+- **Login:** `admin@example.com` / `ChangeMeAdmin123!`
+
+See [docs/LIVE_DEMO.md](docs/LIVE_DEMO.md).
+
 ## Quick Start
 
 ### Prerequisites

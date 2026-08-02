@@ -48,7 +48,12 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     await init_db()
     await seed_database()
     await init_redis()
-    await init_kafka()
+    try:
+        import asyncio
+
+        await asyncio.wait_for(init_kafka(), timeout=5.0)
+    except Exception as exc:
+        logger.warning("kafka_init_skipped", error=str(exc))
     await init_storage()
 
     yield

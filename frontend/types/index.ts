@@ -237,14 +237,18 @@ export interface NotificationListResponse {
 export interface AnalyticsOverview {
   total_incidents: number;
   open_incidents: number;
-  resolved_incidents: number;
   critical_incidents: number;
-  mean_time_to_resolve_hours: number;
+  analysis_pending: number;
+  analysis_completed: number;
   incidents_by_severity: Record<string, number>;
   incidents_by_status: Record<string, number>;
-  incidents_by_category: Record<string, number>;
-  incidents_trend: Array<{ date: string; count: number }>;
-  resolution_trend: Array<{ date: string; resolved: number; opened: number }>;
+  recent_incidents_7d: number;
+  /** Optional enriched fields when available */
+  resolved_incidents?: number;
+  mean_time_to_resolve_hours?: number;
+  incidents_by_category?: Record<string, number>;
+  incidents_trend?: Array<{ date: string; count: number }>;
+  resolution_trend?: Array<{ date: string; resolved: number; opened: number }>;
 }
 
 export interface ModelUsage {

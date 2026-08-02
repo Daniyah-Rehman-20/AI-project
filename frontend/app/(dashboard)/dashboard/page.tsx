@@ -68,13 +68,19 @@ export default function DashboardPage() {
   const isLoading = incidentsLoading || analyticsLoading;
 
   const severityData = analytics
-    ? Object.entries(analytics.incidents_by_severity).map(([name, value]) => ({
+    ? Object.entries(analytics.incidents_by_severity ?? {}).map(([name, value]) => ({
         name: name.charAt(0).toUpperCase() + name.slice(1),
         value,
       }))
     : [];
 
   const trendData = analytics?.incidents_trend ?? [];
+  const resolvedCount =
+    analytics?.resolved_incidents ??
+    analytics?.incidents_by_status?.resolved ??
+    analytics?.incidents_by_status?.closed ??
+    0;
+  const mttr = analytics?.mean_time_to_resolve_hours ?? 0;
 
   return (
     <div className="space-y-6 animate-fade-in">
@@ -129,15 +135,15 @@ export default function DashboardPage() {
             />
             <KpiStat
               label="Resolved (30d)"
-              value={analytics?.resolved_incidents ?? 0}
+              value={resolvedCount}
               icon={CheckCircle2}
               accent="text-emerald-400"
             />
             <KpiStat
-              label="MTTR"
-              value={`${(analytics?.mean_time_to_resolve_hours ?? 0).toFixed(1)}h`}
+              label="Analysis Done"
+              value={analytics?.analysis_completed ?? 0}
               icon={Clock}
-              trend="Mean time to resolve"
+              trend={`${analytics?.analysis_pending ?? 0} pending · MTTR ${mttr.toFixed(1)}h`}
             />
           </div>
 
@@ -248,7 +254,7 @@ export default function DashboardPage() {
                       <p className="font-medium truncate">{incident.title}</p>
                       <p className="text-xs text-muted-foreground mt-0.5">
                         {formatDistanceToNow(new Date(incident.created_at), { addSuffix: true })}
-                        {incident.affected_services.length > 0 &&
+                        {(incident.affected_services ?? []).length > 0 &&
                           ` · ${incident.affected_services.join(", ")}`}
                       </p>
                     </div>

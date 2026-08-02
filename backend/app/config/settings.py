@@ -143,7 +143,7 @@ class Settings(BaseSettings):
     worker_poll_interval_ms: int = Field(default=500, alias="WORKER_POLL_INTERVAL_MS")
 
     # Seed admin
-    seed_admin_email: str = Field(default="admin@incident-intel.dev", alias="SEED_ADMIN_EMAIL")
+    seed_admin_email: str = Field(default="admin@example.com", alias="SEED_ADMIN_EMAIL")
     seed_admin_password: str = Field(default="ChangeMeAdmin123!", alias="SEED_ADMIN_PASSWORD")
     seed_admin_name: str = Field(default="Platform Admin", alias="SEED_ADMIN_NAME")
 

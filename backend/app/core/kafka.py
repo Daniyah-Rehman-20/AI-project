@@ -42,6 +42,8 @@ class KafkaProducer:
                 key_serializer=lambda key: key.encode("utf-8") if key else None,
                 acks="all",
                 enable_idempotence=True,
+                request_timeout_ms=3000,
+                metadata_max_age_ms=3000,
             )
             await self._producer.start()
             self._available = True
