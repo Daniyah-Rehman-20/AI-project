@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root,
+  .light {
+    --background: 210 20% 98%;
+    --foreground: 215 25% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 12%;
+    --primary: 187 85% 43%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 210 15% 93%;
+    --secondary-foreground: 215 25% 20%;
+    --muted: 210 15% 93%;
+    --muted-foreground: 215 12% 45%;
+    --accent: 187 85% 43%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 20% 88%;
+    --input: 214 20% 88%;
+    --ring: 187 85% 43%;
+    --radius: 0.5rem;
+    --grid-line: 214 20% 85%;
+  }
+
+  .dark {
+    --background: 215 28% 8%;
+    --foreground: 210 20% 92%;
+    --card: 215 25% 11%;
+    --card-foreground: 210 20% 92%;
+    --popover: 215 25% 11%;
+    --popover-foreground: 210 20% 92%;
+    --primary: 187 85% 53%;
+    --primary-foreground: 215 28% 8%;
+    --secondary: 215 20% 16%;
+    --secondary-foreground: 210 20% 85%;
+    --muted: 215 20% 16%;
+    --muted-foreground: 215 12% 55%;
+    --accent: 187 85% 53%;
+    --accent-foreground: 215 28% 8%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 215 18% 18%;
+    --input: 215 18% 18%;
+    --ring: 187 85% 53%;
+    --grid-line: 215 18% 15%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  ::selection {
+    @apply bg-cyan-accent/30 text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-gradient-cyan {
+    @apply bg-gradient-to-r from-cyan-accent to-cyan-300 bg-clip-text text-transparent;
+  }
+
+  .glow-cyan {
+    box-shadow: 0 0 40px -10px rgba(34, 211, 238, 0.3);
+  }
+
+  .ops-panel {
+    @apply rounded-lg border border-border/60 bg-card/60 backdrop-blur-sm;
+  }
+}

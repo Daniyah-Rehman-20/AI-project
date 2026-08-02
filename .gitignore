@@ -1,0 +1,96 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Database
+*.db
+*.sqlite3
+backend/data/
+
+# Node / Next.js
+node_modules/
+frontend/.next/
+frontend/out/
+frontend/coverage/
+*.tsbuildinfo
+next-env.d.ts
+
+# Testing / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+coverage.xml
+.tox/
+.nox/
+
+# Docker
+docker-compose.override.yml
+
+# Logs
+*.log
+logs/
+
+# MinIO / local storage
+storage/
+uploads/
+
+# OS
+Thumbs.db
+
+# LangChain / embeddings cache
+.cache/
+sentence-transformers/
+
+# Python
+backend/.venv/
+backend/**/__pycache__/
+backend/.pytest_cache/
+backend/.ruff_cache/
+backend/htmlcov/
+backend/coverage.xml
+backend/*.egg-info/
+backend/data/*.db
+
+# Nest leftovers (should not exist)
+backend/node_modules/
+backend/dist/
