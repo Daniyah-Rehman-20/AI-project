@@ -1,0 +1,155 @@
+%-------------------------
+% Design Automation Resume — Daniyah Rehman
+% One-page Overleaf template (pdfLaTeX)
+% Target: Design Automation & Infrastructure
+%-------------------------
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[margin=0.45in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=*, itemsep=1.5pt, topsep=2pt, parsep=0pt, partopsep=0pt}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\titlerule \vspace{-4pt}]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-3pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.05in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  {\LARGE \textbf{Daniyah Rehman}} \\[4pt]
+  {\small B.Tech Electronics \& Communication Engineering (AI) \quad|\quad IGDTUW \quad|\quad CGPA: 9.04} \\[3pt]
+  {\small
+    \href{mailto:daniyah.rehman@example.com}{daniyah.rehman@example.com} \quad|\quad
+    +91-XXXXXXXXXX \quad|\quad
+    \href{https://linkedin.com/in/daniyahrehman}{linkedin.com/in/daniyahrehman} \quad|\quad
+    \href{https://github.com/daniyahrehman}{github.com/daniyahrehman}
+  } \\[3pt]
+  {\small\textit{Interested in: Design Automation \textbullet\ Python \textbullet\ AI \textbullet\ Infrastructure \textbullet\ Software Engineering}}
+\end{center}
+
+%----------SUMMARY----------
+\section{Professional Summary}
+\small{Electronics and Communication Engineering student with strong software engineering, automation, and AI experience through internships at Microsoft and Proglint. Experienced in building scalable automation frameworks, backend systems, cloud infrastructure, and machine learning applications. Passionate about applying software engineering and AI to solve large-scale engineering automation problems in semiconductor design.}
+
+%----------EDUCATION----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Indira Gandhi Delhi Technical University for Women (IGDTUW)}{Expected 2027}
+    {B.Tech Electronics \& Communication Engineering (AI) \textbar\ CGPA: 9.04}{New Delhi, India}
+\resumeSubHeadingListEnd
+
+%----------EXPERIENCE----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Microsoft}{May 2025 -- July 2025}
+    {Software Engineering Intern}{Remote / India}
+  \resumeItemListStart
+    \resumeItem{Developed a secure SSH host-key verification framework replacing Trust-On-First-Use (TOFU) with centralized trust management for distributed infrastructure.}
+    \resumeItem{Automated SSH host key discovery and distribution using Python, Kubernetes, Ansible, and cloud secret management services.}
+    \resumeItem{Built scalable automation pipelines reducing manual configuration effort across distributed systems and improving deployment reliability.}
+    \resumeItem{Collaborated with engineering teams to harden infrastructure security and streamline software development workflows.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Proglint}{May 2024 -- July 2024}
+    {AI Research Intern}{Remote}
+  \resumeItemListStart
+    \resumeItem{Developed Computer Vision pipelines using Python and deep learning models (YOLO, OpenCV) for industrial inspection and analytics.}
+    \resumeItem{Automated dataset preprocessing, annotation, and training workflows to accelerate model development and evaluation.}
+    \resumeItem{Improved model performance through hyperparameter tuning, experimentation, and data-driven analysis.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------PROJECTS----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {AI Accessibility Assistant \textbar\ \emph{Python, Computer Vision, OCR, Machine Learning}}{}
+  \resumeItemListStart
+    \resumeItem{Built an AI-enabled accessibility assistant automating visual content interpretation using computer vision and OCR pipelines.}
+    \resumeItem{Designed end-to-end Python workflows for image processing, text extraction, and assistive output generation.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {Smart Folk Services Platform \textbar\ \emph{Node.js, Express, MongoDB, Recommendation Engine}}{}
+  \resumeItemListStart
+    \resumeItem{Developed a scalable backend platform with search, recommendation engine, and service automation for multi-user workflows.}
+    \resumeItem{Implemented data-driven recommendation logic and RESTful APIs to optimize discovery and matching.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {Smart Cart Optimizer \textbar\ \emph{Python, Algorithms, Optimization}}{}
+  \resumeItemListStart
+    \resumeItem{Designed optimization algorithms to minimize cart cost and improve selection efficiency under constraints.}
+    \resumeItem{Applied algorithmic problem-solving and data analytics to evaluate trade-offs and performance.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------SKILLS----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.05in, label={}]
+  \small{\item{
+    \textbf{Programming:} Python, C++, JavaScript, SQL, Bash \\
+    \textbf{Automation \& Scripting:} Python Scripting, Linux, Git, Framework Development, Tool Development \\
+    \textbf{Infrastructure:} Kubernetes, Docker, Azure, Cloud Infrastructure, Secret Management \\
+    \textbf{AI \& Data:} Machine Learning, Computer Vision, OpenCV, YOLO, Data Analytics, Algorithms \\
+    \textbf{Backend:} Node.js, Express, MongoDB \\
+    \textbf{Engineering:} OOP, DBMS, Operating Systems, Computer Networks, Design Methodology
+  }}
+\end{itemize}
+
+%----------COURSEWORK----------
+\section{Relevant Coursework}
+\small{Data Structures \textbullet\ Algorithms \textbullet\ Operating Systems \textbullet\ Database Management Systems \textbullet\ Computer Networks \textbullet\ Machine Learning \textbullet\ Artificial Intelligence \textbullet\ Digital Electronics \textbullet\ Computer Architecture \textbullet\ Signals and Systems \textbullet\ VLSI Design Basics}
+
+%----------TECHNICAL INTERESTS----------
+\section{Technical Interests}
+\small{Design Automation \textbullet\ AI for Semiconductor Design \textbullet\ Infrastructure Engineering \textbullet\ Python Automation \textbullet\ Data Analytics \textbullet\ Machine Learning \textbullet\ Pre-Silicon Verification \textbullet\ Scalable Systems}
+
+%----------ACHIEVEMENTS----------
+\section{Achievements}
+\begin{itemize}[leftmargin=0.15in]
+  \resumeItem{Microsoft Software Engineering Intern --- infrastructure automation and secure systems}
+  \resumeItem{ATF Stage-1 (Top 20\%) \textbullet\ LinkedIn CoachIn Hackathon Winner \textbullet\ 150+ LeetCode Problems \textbullet\ CGPA 9.04}
+\end{itemize}
+
+\end{document}
