@@ -1,12 +1,10 @@
 %------------------------------------------------------------------------------
 % Bushra Khan — SDE Resume (Overleaf)
-% Menu → Compiler: pdfLaTeX
-% Paper: A4 PORTRAIT (not landscape)
-% One file. Do not switch to XeLaTeX or AltaCV.
+% Compiler: pdfLaTeX  |  Paper: A4 portrait  |  One page
 %------------------------------------------------------------------------------
 \documentclass[a4paper,10pt]{article}
 
-\usepackage[a4paper,top=1.3cm,bottom=1.5cm,left=1.6cm,right=1.6cm]{geometry}
+\usepackage[top=0.85cm,bottom=0.85cm,left=1.2cm,right=1.2cm]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
@@ -15,151 +13,121 @@
 \usepackage{lmodern}
 \usepackage{microtype}
 \usepackage{array}
-\usepackage{fancyhdr}
 
+\pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
-\setlength{\headheight}{14pt}
-
-\pagestyle{fancy}
-\fancyhf{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0.4pt}
-\fancyfoot[L]{\small Bushra Khan}
-\fancyfoot[C]{\small Software Development Engineer}
-\fancyfoot[R]{\small Page \thepage}
 
 \hypersetup{
   pdftitle={Bushra Khan - Software Development Engineer Resume},
   pdfauthor={Bushra Khan}
 }
 
-\titleformat{\section}{\large\bfseries\raggedright}{}{0em}{}[\vspace{3pt}{\titlerule}]
-\titlespacing*{\section}{0pt}{10pt}{6pt}
+\titleformat{\section}{\normalsize\bfseries\raggedright}{}{0em}{}[\vspace{1.5pt}{\titlerule}]
+\titlespacing*{\section}{0pt}{7pt}{4pt}
 
-\setlist[itemize]{leftmargin=16pt, itemsep=3pt, topsep=3pt, parsep=0pt, partopsep=0pt}
+\setlist[itemize]{leftmargin=12pt, itemsep=1.5pt, topsep=1.5pt, parsep=0pt, partopsep=0pt}
 
-% Title + org on the left; date + city on the right. Separate minipages so text cannot overlap.
 \newcommand{\role}[4]{%
-  \vspace{6pt}%
+  \vspace{3.5pt}%
   \noindent
-  \begin{minipage}[t]{0.68\linewidth}
-    \raggedright
-    \textbf{#1}\\[3pt]
+  \begin{minipage}[t]{0.70\linewidth}
+    \raggedright\textbf{#1}\\[1pt]
     {\small\itshape #3}
   \end{minipage}%
   \hfill
-  \begin{minipage}[t]{0.30\linewidth}
-    \raggedleft
-    {\small #2}\\[3pt]
+  \begin{minipage}[t]{0.28\linewidth}
+    \raggedleft{\small #2}\\[1pt]
     {\small\itshape #4}
   \end{minipage}\par
-  \vspace{4pt}%
-}
-
-\newcommand{\project}[2]{%
-  \vspace{8pt}%
-  \noindent\textbf{#1}\\[2pt]
-  {\small\itshape #2}\par
+  \vspace{1.5pt}%
 }
 
 \begin{document}
+\fontsize{9.4}{11.4}\selectfont
 
 \begin{center}
-  {\LARGE\bfseries Bushra Khan}\\[6pt]
-  Software Development Engineer \textbar\ Full-Stack Developer \textbar\ AI\\[8pt]
-  {\small Delhi, India \quad$\cdot$\quad +91-7982389252 \quad$\cdot$\quad
-  \href{mailto:bushrakhan1730@gmail.com}{bushrakhan1730@gmail.com}}\\[4pt]
+  {\LARGE\bfseries Bushra Khan}\\[3pt]
+  {\normalsize Software Development Engineer \textbar\ Full-Stack Developer \textbar\ AI}\\[4pt]
+  {\small Delhi, India $\cdot$ +91-7982389252 $\cdot$
+  \href{mailto:bushrakhan1730@gmail.com}{bushrakhan1730@gmail.com}}\\[2pt]
   {\small
-    \href{https://www.linkedin.com/in/bushra-khan-a9ba06287/}{linkedin.com/in/bushra-khan-a9ba06287}
-    \quad$\cdot$\quad
-    \href{https://github.com/bushra931}{github.com/bushra931}
-    \quad$\cdot$\quad
-    \href{https://leetcode.com/u/bushra_khan_007/}{leetcode.com/u/bushra\_khan\_007}
-  }
+  \href{https://www.linkedin.com/in/bushra-khan-a9ba06287/}{linkedin.com/in/bushra-khan-a9ba06287} $\cdot$
+  \href{https://github.com/bushra931}{github.com/bushra931} $\cdot$
+  \href{https://leetcode.com/u/bushra_khan_007/}{leetcode.com/u/bushra\_khan\_007}}
 \end{center}
 
 \section{Professional Summary}
-B.Tech CSE (Artificial Intelligence) student and Software Development Engineer Intern with experience building production web applications, REST APIs, and full-stack products. Core skills: Java, C++, Python, JavaScript, TypeScript, React.js, Node.js, Express.js, FastAPI, Flutter, MySQL, and MongoDB. 500+ Data Structures and Algorithms problems solved. Seeking SDE intern and full-time roles.
+B.Tech CSE (AI) student and SDE Intern building production web apps, REST APIs, and full-stack products in Java, C++, Python, JavaScript, TypeScript, React.js, Node.js, FastAPI, Flutter, MySQL, and MongoDB. 500+ DSA problems solved. Seeking SDE intern and full-time roles.
 
 \section{Education}
 \role{Indira Gandhi Delhi Technical University for Women (IGDTUW)}{2023 -- 2027}
 {B.Tech Computer Science and Engineering (Artificial Intelligence) \textbar\ CGPA: 8.695 / 10.0}{Delhi, India}
-
-\role{Central Board of Secondary Education (CBSE)}{2020 \& 2022}
-{Class X: 92.8\% \textbar\ Class XII (PCM): 94.4\%}{Delhi, India}
+\vspace{2pt}
+\noindent\textbf{CBSE} \quad Class X: 92.8\% \textbar\ Class XII (PCM): 94.4\% \hfill {\small 2020 \& 2022 \textbar\ Delhi}
 
 \section{Technical Skills}
-\renewcommand{\arraystretch}{1.45}
-\noindent\begin{tabular}{@{}>{\bfseries}p{0.22\linewidth}p{0.74\linewidth}@{}}
+\renewcommand{\arraystretch}{1.18}
+{\small
+\noindent\begin{tabular}{@{}>{\bfseries}l@{\hspace{8pt}}p{0.80\linewidth}@{}}
 Languages & C++, Java, Python, JavaScript, TypeScript, Dart, PHP, SQL, HTML, CSS \\
 Frameworks & React.js, Node.js, Express.js, FastAPI, Flutter, Firebase, Tailwind CSS \\
 Databases / APIs & MySQL, MongoDB, Firebase Cloud Firestore, REST APIs, JWT Authentication \\
 AI / ML & Machine Learning, Deep Learning, Generative AI, TensorFlow, Keras, Scikit-learn, Random Forest, Prompt Engineering, Gemini API \\
-CS Fundamentals & Data Structures and Algorithms (DSA), Object-Oriented Programming (OOP), DBMS, Operating Systems, Computer Networks \\
+CS Fundamentals & Data Structures and Algorithms (DSA), OOP, DBMS, Operating Systems, Computer Networks \\
 Tools & Git, GitHub, VS Code, Linux \\
-\end{tabular}
+\end{tabular}}
 
 \section{Experience}
 \role{Software Development Engineer (SDE) Intern}{Jan 2026 -- Jul 2026}
 {ITJOBXS}{Remote}
 \begin{itemize}
-  \item Developed and maintained 10+ responsive web pages for the Jobs and Education platform using HTML, CSS, JavaScript, PHP, and MySQL.
-  \item Implemented 5+ features including user registration, authentication, form validation, and database CRUD operations.
-  \item Integrated Google reCAPTCHA and bot detection, reducing spam registrations; resolved 20+ frontend and backend issues.
+  \item Developed and maintained 10+ responsive web pages using HTML, CSS, JavaScript, PHP, and MySQL.
+  \item Implemented 5+ features (registration, authentication, validation, CRUD) and resolved 20+ frontend/backend issues; added Google reCAPTCHA to reduce spam.
 \end{itemize}
 
 \role{Information Technology Intern}{Dec 2025 -- Jan 2026}
-{Central Council for Research in Ayurvedic Sciences (CCRAS), Ministry of AYUSH}{New Delhi}
+{CCRAS, Ministry of AYUSH}{New Delhi}
 \begin{itemize}
-  \item Designed RESTful APIs in FastAPI for AURA, a healthcare Progressive Web Application (PWA), serving 3 user roles.
-  \item Implemented backend logic using clinical parameters (Prakriti, Dosha, Ritu, Age, Gender) for personalized recommendations.
-  \item Built user-facing and doctor-facing modules, streamlining workflows on a government healthcare platform.
+  \item Designed FastAPI REST APIs for AURA, a healthcare PWA serving 3 user roles, with Prakriti/Dosha/Ritu/Age/Gender recommendation logic.
+  \item Built user-facing and doctor-facing modules for a government healthcare platform.
 \end{itemize}
 
 \role{Deep Learning Intern}{Jun 2025 -- Jul 2025}
 {Anveshan Foundation}{Remote}
 \begin{itemize}
-  \item Fine-tuned a CNN in TensorFlow/Keras for potato disease classification (\textasciitilde95\% accuracy) and built a 5-stage ML pipeline (preprocess, augment, tune, train, evaluate).
+  \item Fine-tuned a CNN in TensorFlow/Keras (\textasciitilde95\% accuracy on PlantVillage) and built a 5-stage ML pipeline.
 \end{itemize}
-
-\clearpage
 
 \section{Projects}
-\project{\href{https://github.com/bushra931/veloura-dream-studio}{Veloura --- AI Fashion Design Platform}}{React.js \textbullet\ TypeScript \textbullet\ Node.js \textbullet\ Express.js \textbullet\ MongoDB \textbullet\ JWT \textbullet\ Gemini}
+\vspace{2pt}
+\noindent\textbf{\href{https://github.com/bushra931/veloura-dream-studio}{Veloura} --- AI Fashion Design} \textbar\ {\small React.js, TypeScript, Node.js, Express.js, MongoDB, JWT, Gemini}
 \begin{itemize}
-  \item Built a full-stack MERN application with 10+ modules for AI-assisted design, conversational customization, designer/tailor collaboration, digital wardrobe, and order tracking.
-  \item Implemented JWT authentication, scalable REST APIs, and Gemini AI workflows for color and fabric recommendations.
+  \item Built a MERN app with 10+ modules (AI design, customization, designer/tailor collaboration, wardrobe, orders), JWT auth, REST APIs, and Gemini recommendations.
 \end{itemize}
 
-\project{\href{https://github.com/bushra931/Packify}{Packify --- AI Packaging Optimization}}{Python \textbullet\ Scikit-learn \textbullet\ Random Forest \textbullet\ React.js \textbullet\ Node.js}
+\noindent\textbf{\href{https://github.com/bushra931/Packify}{Packify} --- AI Packaging Optimization} \textbar\ {\small Python, Scikit-learn, Random Forest, React.js, Node.js}
 \begin{itemize}
-  \item Trained a Random Forest model to recommend packaging dimensions, cutting unused shipment space by 15--20\% and improving truck load efficiency by 10--15\%.
+  \item Random Forest model for packaging dimensions; cut unused space 15--20\% and improved load efficiency 10--15\%.
 \end{itemize}
 
-\project{\href{https://github.com/bushra931/EveryBitee}{EveryBite --- AI Nutrition Guide}}{Flutter \textbullet\ Firebase \textbullet\ Gemini API \textbullet\ Prompt Engineering}
+\noindent\textbf{\href{https://github.com/bushra931/EveryBitee}{EveryBite} --- AI Nutrition Guide} \textbar\ {\small Flutter, Firebase, Gemini API, Prompt Engineering}
 \begin{itemize}
-  \item Built a barcode-scanning mobile app on Open Food Facts (2.5M+ products) and Gemini API for allergy-aware Generative AI diet insights.
+  \item Barcode-scanning app on Open Food Facts (2.5M+ products) + Gemini API for allergy-aware Generative AI diet insights.
 \end{itemize}
 
-\project{Cooig --- College Social Platform}{Flutter \textbullet\ Firebase \textbullet\ Cloud Firestore \textbullet\ Firebase Authentication}
+\noindent\textbf{Cooig --- College Social Platform} \textbar\ {\small Flutter, Firebase, Cloud Firestore, Firebase Auth}
 \begin{itemize}
-  \item Shipped a real-time mobile app with 5+ modules (Marketplace, Lost and Found, Noticeboard, Academic Resources), replacing 4+ fragmented campus tools.
+  \item Real-time mobile app with 5+ modules (Marketplace, Lost and Found, Noticeboard, Academic Resources), replacing 4+ campus tools.
 \end{itemize}
 
-\section{Achievements}
+\section{Achievements \& Leadership}
 \begin{itemize}
-  \item Solved 500+ DSA problems on LeetCode, GeeksforGeeks, Codeforces, and Striver (arrays, strings, linked lists, trees, graphs, dynamic programming).
-  \item \textbf{Flipkart GRiD 7.0 National Semi-Finalist (Top 2\%)} --- national software engineering competition.
-  \item \textbf{Smart India Hackathon Finalist} --- AI Indian Sign Language (ISL) accessibility app; selected among 100+ teams.
-  \item \textbf{Reliance Foundation Scholar} --- Top 5,000 of 58,000+ applicants across India.
-  \item \textbf{Millennium Fellow, Class of 2025} --- Top 6\% globally (4,000 of 60,000+ applicants).
-\end{itemize}
-
-\section{Leadership}
-\begin{itemize}
-  \item \textbf{Vice President, Zenovate (IGDTUW)} --- recruited 30+ members, organized 3+ technical events, and grew participation by 40\%.
-  \item \textbf{Volunteer, Margins to Mainstream Foundation} --- mentored 10+ JEE aspirants (20\% average score gain) and led 5+ outreach programs reaching 200+ students.
+  \item Solved 500+ DSA problems on LeetCode, GeeksforGeeks, Codeforces, and Striver (arrays, strings, trees, graphs, DP).
+  \item \textbf{Flipkart GRiD 7.0 National Semi-Finalist (Top 2\%)} \textbar\ \textbf{Smart India Hackathon Finalist} (AI ISL accessibility app).
+  \item \textbf{Reliance Foundation Scholar} (Top 5,000 / 58,000+) \textbar\ \textbf{Millennium Fellow 2025} (Top 6\% globally).
+  \item \textbf{Vice President, Zenovate (IGDTUW)} --- 30+ members, 3+ technical events, 40\% participation growth.
+  \item \textbf{Volunteer, Margins to Mainstream} --- mentored 10+ JEE aspirants (20\% score gain); 200+ students reached.
 \end{itemize}
 
 \end{document}
