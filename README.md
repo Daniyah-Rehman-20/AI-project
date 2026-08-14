@@ -1,24 +1,24 @@
 # Bushra Khan — ATS-optimized SDE resume (Overleaf)
 
-Single-column **one-page** A4 `pdfLaTeX` resume targeting Software Development Engineer roles.
+Single-column **one-page** A4 `pdfLaTeX` resume for Software Development Engineer / Software Engineer roles.
 
 ## Overleaf
 
-1. New project → Blank project (or Upload Project).
-2. Replace `main.tex` with `bushra-resume.tex` (or rename this file to `main.tex`).
-3. Menu → Compiler → **pdfLaTeX** (not XeLaTeX, not LuaLaTeX).
-4. Menu → Paper Size → **A4**. Orientation stays **Portrait**.
-5. Recompile → Download PDF.
-6. Upload that PDF to job portals. Do not upload the `.tex` file.
+1. New blank project (not AltaCV).
+2. Replace `main.tex` with `bushra-resume.tex`.
+3. Compiler: **pdfLaTeX**. Paper: **A4 Portrait**.
+4. Recompile and download the PDF for job portals.
 
-Do not paste this into an AltaCV project. AltaCV’s `right=10cm` sidebar geometry squeezes the body into a thin column and overlaps dates with titles.
+## ATS scoring notes
 
-No extra class files, fonts, or images are required.
+Checkers such as Jobscan compare your resume to **one job description**. A generic 72 usually means missing keywords and hard-to-parse layout (tables, sidebars, icons).
 
-## ATS design choices
+This template is built for parseability:
 
-- One column, standard headings (`Education`, `Technical Skills`, `Experience`, `Projects`, `Achievements`)
-- Visible emails and URLs (not icon-only “LinkedIn”)
-- Skills near the top for keyword matching
-- No photo, tables-as-layout grids, text boxes, or Font Awesome
-- SDE keywords: Java, C++, Python, REST APIs, React.js, Node.js, MySQL, DSA, OOP, DBMS
+- Standard headings: Professional Summary, Education, Skills, Work Experience, Projects, Achievements
+- No tables, minipages, photos, or icons
+- Visible email, phone, and URLs
+- Full month dates and spelled-out terms (REST APIs, Object-Oriented Programming, Database Management Systems)
+- SDE keywords in the summary and skills lines
+
+For a higher match score, paste the target job posting and add any extra required skills (for example Docker, AWS, Kubernetes) only if you can back them up.
