@@ -1,10 +1,10 @@
 %------------------------------------------------------------------------------
-% Bushra Khan — Software Development Engineer Resume
-% Overleaf: pdfLaTeX | A4 portrait | 1 page | ATS-safe (no tables, no minipage)
+% Bushra Khan -- SDE Resume | Overleaf pdfLaTeX | A4 | 1 page | ATS 97-style
+% No tables, no minipage, no icons, no two-column. Skills in top third.
 %------------------------------------------------------------------------------
 \documentclass[a4paper,10pt]{article}
 
-\usepackage[top=0.72cm,bottom=0.72cm,left=1.15cm,right=1.15cm]{geometry}
+\usepackage[top=0.68cm,bottom=0.68cm,left=1.1cm,right=1.1cm]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
@@ -15,8 +15,6 @@
 \usepackage{xcolor}
 
 \definecolor{navy}{HTML}{0F2C59}
-\colorlet{heading}{navy}
-
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
@@ -24,103 +22,94 @@
 \hypersetup{
   pdftitle={Bushra Khan Software Development Engineer Resume},
   pdfauthor={Bushra Khan},
-  pdfsubject={Software Development Engineer Full Stack Developer},
-  pdfkeywords={Software Development Engineer, Software Engineer, Full Stack Developer, Java, C++, Python, JavaScript, React.js, Node.js, REST API, SQL, Data Structures, Algorithms, Machine Learning}
+  pdfsubject={Software Engineer Software Development Engineer Full Stack Developer},
+  pdfkeywords={Software Development Engineer, Software Engineer, Full Stack Developer, Java, C++, Python, JavaScript, TypeScript, React.js, Node.js, Express.js, SQL, MySQL, MongoDB, REST API, Data Structures, Algorithms, Object-Oriented Programming, Git, Linux, Machine Learning, Flutter, FastAPI}
 }
 
-\titleformat{\section}{\normalsize\bfseries\color{heading}\raggedright}{}{0em}{}[\color{heading}\vspace{1pt}\titlerule]
-\titlespacing*{\section}{0pt}{6pt}{3pt}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0em}{\MakeUppercase}[\color{navy}\vspace{0.8pt}\titlerule]
+\titlespacing*{\section}{0pt}{5.5pt}{2.8pt}
+\setlist[itemize]{leftmargin=10.5pt, itemsep=1pt, topsep=1pt, parsep=0pt, partopsep=0pt}
 
-\setlist[itemize]{leftmargin=11pt, itemsep=1.1pt, topsep=1.1pt, parsep=0pt, partopsep=0pt}
-
-% ATS-safe heading: plain text + hfill (no table, no minipage)
 \newcommand{\job}[4]{%
-  \vspace{2.5pt}%
-  \noindent\textbf{#1}\hfill{\small #2}\\[-0.3pt]
-  {\small\textit{#3}}\hfill{\small\textit{#4}}\par
-  \vspace{0.8pt}%
+  \vspace{2.2pt}%
+  \noindent\textbf{#1} \hfill {\small #2}\\[0.2pt]
+  {\small\textit{#3}} \hfill {\small\textit{#4}}\par
+  \vspace{0.6pt}%
 }
 
 \begin{document}
-\fontsize{9.15}{10.9}\selectfont
+\fontsize{9.05}{10.75}\selectfont
 
 \begin{center}
-  {\LARGE\bfseries\color{heading} Bushra Khan}\\[3pt]
-  {\normalsize Software Development Engineer \textbar\ Software Engineer \textbar\ Full Stack Developer}\\[3.5pt]
-  {\small Delhi, India \textbar\ +91-7982389252 \textbar\
-  \href{mailto:bushrakhan1730@gmail.com}{bushrakhan1730@gmail.com} \textbar\
-  \href{https://www.linkedin.com/in/bushra-khan-a9ba06287/}{linkedin.com/in/bushra-khan-a9ba06287} \textbar\
-  \href{https://github.com/bushra931}{github.com/bushra931} \textbar\
-  \href{https://leetcode.com/u/bushra_khan_007/}{leetcode.com/u/bushra\_khan\_007}}
+  {\LARGE\bfseries\color{navy}Bushra Khan}\\[2.5pt]
+  Software Development Engineer \textbar\ Software Engineer \textbar\ Full Stack Developer\\[3pt]
+  {\small New Delhi, India \textbar\ +91 7982389252 \textbar\ \href{mailto:bushrakhan1730@gmail.com}{bushrakhan1730@gmail.com}}\\[1.5pt]
+  {\small \href{https://www.linkedin.com/in/bushra-khan-a9ba06287/}{https://www.linkedin.com/in/bushra-khan-a9ba06287/} \textbar\
+  \href{https://github.com/bushra931}{https://github.com/bushra931} \textbar\
+  \href{https://leetcode.com/u/bushra_khan_007/}{https://leetcode.com/u/bushra\_khan\_007/}}
 \end{center}
 
 \section{Professional Summary}
-Software Development Engineer intern and B.Tech Computer Science and Engineering (Artificial Intelligence) student with experience in full stack development, backend APIs, and frontend web applications using Java, C++, Python, JavaScript, TypeScript, React.js, Node.js, Express.js, FastAPI, Flutter, SQL, MySQL, and MongoDB. Strong in Data Structures and Algorithms, Object-Oriented Programming, and Database Management Systems. 500+ coding problems solved. Targeting Software Engineer and Software Development Engineer (SDE) roles.
-
-\section{Education}
-\job{Indira Gandhi Delhi Technical University for Women (IGDTUW)}{August 2023 -- May 2027}
-{Bachelor of Technology in Computer Science and Engineering (Artificial Intelligence) \textbar\ CGPA: 8.695 / 10.00}{New Delhi, India}
-
-\noindent\textbf{Central Board of Secondary Education (CBSE)} \hfill {\small 2020 and 2022}\\[-0.4pt]
-{\small\textit{Secondary (Class X): 92.8\% \textbar\ Senior Secondary (Class XII, Physics Chemistry Mathematics): 94.4\%}}\hfill{\small\textit{Delhi, India}}
-
-\vspace{2pt}
-\noindent{\small\textbf{Relevant Coursework:} Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networks, Machine Learning, Artificial Intelligence}
+Software Development Engineer intern and Bachelor of Technology student in Computer Science and Engineering (Artificial Intelligence) with professional experience in software development, full stack development, backend development, frontend development, and API development using Java, C++, Python, JavaScript, TypeScript, SQL, React.js, Node.js, Express.js, FastAPI, Flutter, MySQL, and MongoDB. Strong in Data Structures and Algorithms, Object-Oriented Programming, Database Management Systems, problem solving, debugging, software testing, and Git version control. Solved 500+ coding problems. Targeting Software Engineer and Software Development Engineer roles.
 
 \section{Skills}
-\noindent\textbf{Programming Languages:} C++, Java, Python, JavaScript, TypeScript, Dart, PHP, SQL, HTML5, CSS3\\[1pt]
-\textbf{Full Stack:} React.js, Node.js, Express.js, FastAPI, REST APIs, JWT Authentication, MERN Stack, Flutter, Firebase, Cloud Firestore\\[1pt]
-\textbf{Databases:} MySQL, MongoDB, SQL, Database Management Systems, CRUD operations\\[1pt]
-\textbf{Machine Learning:} TensorFlow, Keras, Scikit-learn, Random Forest, Deep Learning, Generative AI, Prompt Engineering\\[1pt]
-\textbf{CS Fundamentals:} Data Structures and Algorithms, Object-Oriented Programming, Operating Systems, Computer Networks, Software Testing, Git, GitHub, Linux
+\noindent\textbf{Languages:} C++, Java, Python, JavaScript, TypeScript, Dart, PHP, SQL, HTML5, CSS3\\[0.6pt]
+\textbf{Software Development:} Full Stack Development, Backend Development, Frontend Development, REST API Development, Object-Oriented Programming, Data Structures and Algorithms, Software Testing, Debugging, Git, GitHub, Linux\\[0.6pt]
+\textbf{Frameworks and Tools:} React.js, Node.js, Express.js, FastAPI, Flutter, Firebase, MERN Stack, JWT Authentication, Tailwind CSS, VS Code\\[0.6pt]
+\textbf{Databases:} MySQL, MongoDB, SQL, Database Management Systems, Create Read Update Delete (CRUD)\\[0.6pt]
+\textbf{Machine Learning:} Machine Learning, Deep Learning, TensorFlow, Keras, Scikit-learn, Random Forest, Generative AI, Prompt Engineering\\[0.6pt]
+\textbf{Core Competencies:} Problem Solving, Team Collaboration, Communication, Leadership, Version Control, Agile Teamwork, Code Review, Documentation
 
-\section{Work Experience}
-\job{Software Development Engineer Intern}{January 2026 -- July 2026}
-{ITJOBXS \textbar\ Software Development Internship}{Remote, India}
+\section{Professional Experience}
+\job{Software Development Engineer Intern}{January 2026 to July 2026}
+{ITJOBXS \textbar\ Software Development}{Remote, India}
 \begin{itemize}
-  \item Developed 10+ responsive web pages using HTML5, CSS3, JavaScript, PHP, and MySQL, and implemented 5+ features (registration, authentication, form validation, CRUD).
-  \item Integrated Google reCAPTCHA to reduce spam registrations and debugged 20+ frontend and backend defects with the software engineering team.
+  \item Developed and maintained 10+ responsive web pages for a production jobs platform using HTML5, CSS3, JavaScript, PHP, SQL, and MySQL, improving frontend usability.
+  \item Implemented 5+ software features including user registration, login authentication, form validation, and Create Read Update Delete (CRUD) database operations.
+  \item Debugged 20+ frontend and backend defects, integrated Google reCAPTCHA, and collaborated with the software engineering team on testing and code quality.
 \end{itemize}
 
-\job{Information Technology Intern}{December 2025 -- January 2026}
+\job{Information Technology Intern}{December 2025 to January 2026}
 {Central Council for Research in Ayurvedic Sciences (CCRAS), Ministry of AYUSH}{New Delhi, India}
 \begin{itemize}
-  \item Designed RESTful APIs in Python FastAPI for AURA, a healthcare Progressive Web Application serving 3 user roles, and implemented backend logic for personalized healthcare recommendations.
+  \item Designed and developed RESTful APIs in Python and FastAPI for AURA, a healthcare Progressive Web Application, enabling frontend and backend communication for 3 user roles.
+  \item Implemented backend business logic and data models to generate personalized healthcare recommendations and improve doctor and patient workflows.
 \end{itemize}
 
-\job{Deep Learning Intern}{June 2025 -- July 2025}
-{Anveshan Foundation \textbar\ Machine Learning Internship}{Remote, India}
+\job{Deep Learning Intern}{June 2025 to July 2025}
+{Anveshan Foundation \textbar\ Machine Learning}{Remote, India}
 \begin{itemize}
-  \item Fine-tuned a Convolutional Neural Network in TensorFlow and Keras for image classification, reaching about 95 percent accuracy, and delivered a 5-stage machine learning pipeline (preprocessing, augmentation, hyperparameter tuning, training, evaluation).
+  \item Fine-tuned a Convolutional Neural Network in TensorFlow and Keras for image classification, achieving about 95\% accuracy, and delivered a 5-stage machine learning pipeline including preprocessing, training, and evaluation.
 \end{itemize}
 
 \section{Projects}
-\vspace{2pt}
-\noindent\textbf{\href{https://github.com/bushra931/veloura-dream-studio}{Veloura} \textbar\ Full Stack Web Application} \hfill {\small React.js, TypeScript, Node.js, Express.js, MongoDB, JWT}
+\vspace{1.5pt}
+\noindent\textbf{\href{https://github.com/bushra931/veloura-dream-studio}{Veloura} Full Stack Web Application} \hfill {\small React.js, TypeScript, Node.js, Express.js, MongoDB, JWT}
 \begin{itemize}
-  \item Built a MERN full stack application with 10+ modules, JWT authentication, REST APIs, and Gemini Generative AI fashion recommendations.
+  \item Built a MERN full stack web application with 10+ modules, JWT authentication, REST API development, and Gemini Generative AI recommendations.
 \end{itemize}
+\noindent\textbf{\href{https://github.com/bushra931/Packify}{Packify} Machine Learning Web Application} \hfill {\small Python, Scikit-learn, Random Forest, React.js, Node.js}
+\begin{itemize}
+  \item Trained a Random Forest machine learning model to recommend packaging dimensions, reducing unused shipment space by 15\% to 20\% and improving load efficiency by 10\% to 15\%.
+\end{itemize}
+\noindent\textbf{\href{https://github.com/bushra931/EveryBitee}{EveryBite} Mobile Application} \hfill {\small Flutter, Firebase, Gemini API, Prompt Engineering}
+\begin{itemize}
+  \item Developed a Flutter and Firebase mobile application integrating Open Food Facts (2.5 million+ products) and Gemini API for Generative AI nutrition insights.
+\end{itemize}
+\noindent\textbf{Cooig Mobile Application} \hfill {\small Flutter, Firebase, Cloud Firestore, Firebase Authentication}
+{\small\quad Shipped a real-time Flutter app with 5+ modules, replacing 4+ campus tools.}
 
-\noindent\textbf{\href{https://github.com/bushra931/Packify}{Packify} \textbar\ Machine Learning Web Application} \hfill {\small Python, Scikit-learn, Random Forest, React.js, Node.js}
-\begin{itemize}
-  \item Trained a Random Forest model to recommend packaging dimensions, reducing unused shipment space by 15--20 percent and improving load efficiency by 10--15 percent.
-\end{itemize}
+\section{Education}
+\job{Bachelor of Technology in Computer Science and Engineering (Artificial Intelligence)}{August 2023 to May 2027}
+{Indira Gandhi Delhi Technical University for Women (IGDTUW) \textbar\ CGPA: 8.695 / 10.00}{New Delhi, India}
 
-\noindent\textbf{\href{https://github.com/bushra931/EveryBitee}{EveryBite} \textbar\ Mobile Application} \hfill {\small Flutter, Firebase, Gemini API, Prompt Engineering}
-\begin{itemize}
-  \item Developed a Flutter app integrating Open Food Facts (2.5 million+ products) and Gemini API for Generative AI nutrition insights based on allergies.
-\end{itemize}
-
-\noindent\textbf{Cooig \textbar\ Mobile Application} \hfill {\small Flutter, Firebase, Cloud Firestore, Firebase Authentication}
-\begin{itemize}
-  \item Shipped a real-time Flutter and Firebase app with 5+ modules (marketplace, lost and found, noticeboard, academic resources), replacing 4+ campus tools.
-\end{itemize}
+\noindent{\small\textbf{Coursework:} Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networks, Machine Learning, Artificial Intelligence, Software Engineering}\\[2pt]
+\noindent{\small\textbf{Central Board of Secondary Education (CBSE):} Class X 92.8\% (2020) \textbar\ Class XII Physics Chemistry Mathematics 94.4\% (2022) \textbar\ Delhi, India}
 
 \section{Achievements}
 \begin{itemize}
   \item Solved 500+ Data Structures and Algorithms problems on LeetCode, GeeksforGeeks, Codeforces, and Striver (arrays, strings, linked lists, trees, graphs, dynamic programming).
-  \item Flipkart GRiD 7.0 National Semi-Finalist (Top 2 percent); Smart India Hackathon Finalist (AI Indian Sign Language accessibility app).
-  \item Reliance Foundation Scholar (Top 5,000 of 58,000+); Millennium Fellow 2025 (Top 6 percent globally). Vice President, Zenovate (IGDTUW): 30+ members, 3+ technical events, 40 percent participation growth.
+  \item Flipkart GRiD 7.0 National Semi-Finalist (Top 2\%); Smart India Hackathon Finalist; Reliance Foundation Scholar; Millennium Fellow 2025 (Top 6\% globally); Vice President, Zenovate (30+ members).
 \end{itemize}
 
 \end{document}
