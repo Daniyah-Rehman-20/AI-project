@@ -6,9 +6,12 @@ Single-column `pdfLaTeX` resume targeting Software Development Engineer roles. T
 
 1. New project → Blank project (or Upload Project).
 2. Replace `main.tex` with `bushra-resume.tex` (or rename this file to `main.tex`).
-3. Menu → Compiler → **pdfLaTeX**.
-4. Recompile → Download PDF.
-5. Upload that PDF to job portals (Workday, Greenhouse, Lever, Naukri). Do not upload the `.tex` file.
+3. Menu → Compiler → **pdfLaTeX** (not XeLaTeX, not LuaLaTeX).
+4. Menu → Paper Size → **A4**. Orientation stays **Portrait**.
+5. Recompile → Download PDF.
+6. Upload that PDF to job portals. Do not upload the `.tex` file.
+
+Do not paste this into an AltaCV project. AltaCV’s `right=10cm` sidebar geometry squeezes the body into a thin column and overlaps dates with titles.
 
 No extra class files, fonts, or images are required.
 

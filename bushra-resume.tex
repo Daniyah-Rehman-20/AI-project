@@ -1,171 +1,165 @@
 %------------------------------------------------------------------------------
-% Bushra Khan — Software Development Engineer Resume
-% Overleaf: Menu → Compiler = pdfLaTeX. This is the only file you need.
-% Single column, no icons, no photo, no sidebar (ATS-safe).
+% Bushra Khan — SDE Resume (Overleaf)
+% Menu → Compiler: pdfLaTeX
+% Paper: A4 PORTRAIT (not landscape)
+% One file. Do not switch to XeLaTeX or AltaCV.
 %------------------------------------------------------------------------------
 \documentclass[a4paper,10pt]{article}
 
-\usepackage[top=0.4in,bottom=0.4in,left=0.5in,right=0.5in]{geometry}
+\usepackage[a4paper,top=1.3cm,bottom=1.5cm,left=1.6cm,right=1.6cm]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage{tabularx}
-\usepackage{array}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage{microtype}
+\usepackage{array}
+\usepackage{fancyhdr}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\headheight}{14pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyfoot[L]{\small Bushra Khan}
+\fancyfoot[C]{\small Software Development Engineer}
+\fancyfoot[R]{\small Page \thepage}
 
 \hypersetup{
   pdftitle={Bushra Khan - Software Development Engineer Resume},
-  pdfauthor={Bushra Khan},
-  pdfsubject={Software Development Engineer},
-  pdfkeywords={Software Development Engineer, SDE, Java, C++, Python, React.js, Node.js, DSA, FastAPI, Flutter}
+  pdfauthor={Bushra Khan}
 }
 
-\pagestyle{empty}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0pt}
-\setlist[itemize]{leftmargin=*, itemsep=1.2pt, topsep=1pt, parsep=0pt, partopsep=0pt}
+\titleformat{\section}{\large\bfseries\raggedright}{}{0em}{}[\vspace{3pt}{\titlerule}]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
 
-\titleformat{\section}{
-  \vspace{-8pt}\scshape\raggedright\large
-}{}{0em}{}[\titlerule\vspace{-5pt}]
-\titlespacing*{\section}{0pt}{7pt}{3pt}
+\setlist[itemize]{leftmargin=16pt, itemsep=3pt, topsep=3pt, parsep=0pt, partopsep=0pt}
 
-\newcommand{\resumeItem}[1]{\item\small{#1\vspace{-1pt}}}
-\newcommand{\resumeSubheading}[4]{
-  \vspace{0.5pt}\item
-    \begin{tabular*}{\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+% Title + org on the left; date + city on the right. Separate minipages so text cannot overlap.
+\newcommand{\role}[4]{%
+  \vspace{6pt}%
+  \noindent
+  \begin{minipage}[t]{0.68\linewidth}
+    \raggedright
+    \textbf{#1}\\[3pt]
+    {\small\itshape #3}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{0.30\linewidth}
+    \raggedleft
+    {\small #2}\\[3pt]
+    {\small\itshape #4}
+  \end{minipage}\par
+  \vspace{4pt}%
 }
-\newcommand{\resumeProjectHeading}[2]{
-  \item
-    \begin{tabular*}{\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
-      \small\textbf{#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-5pt}
+
+\newcommand{\project}[2]{%
+  \vspace{8pt}%
+  \noindent\textbf{#1}\\[2pt]
+  {\small\itshape #2}\par
 }
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
 
 \begin{document}
 
 \begin{center}
-  {\Huge \textbf{Bushra Khan}} \\[3pt]
-  {\large Software Development Engineer \textbar\ Full-Stack Developer \textbar\ AI} \\[3pt]
+  {\LARGE\bfseries Bushra Khan}\\[6pt]
+  Software Development Engineer \textbar\ Full-Stack Developer \textbar\ AI\\[8pt]
+  {\small Delhi, India \quad$\cdot$\quad +91-7982389252 \quad$\cdot$\quad
+  \href{mailto:bushrakhan1730@gmail.com}{bushrakhan1730@gmail.com}}\\[4pt]
   {\small
-    Delhi, India \textbar\
-    +91-7982389252 \textbar\
-    \href{mailto:bushrakhan1730@gmail.com}{bushrakhan1730@gmail.com} \textbar\
-    \href{https://www.linkedin.com/in/bushra-khan-a9ba06287/}{linkedin.com/in/bushra-khan-a9ba06287} \textbar\
-    \href{https://github.com/bushra931}{github.com/bushra931} \textbar\
+    \href{https://www.linkedin.com/in/bushra-khan-a9ba06287/}{linkedin.com/in/bushra-khan-a9ba06287}
+    \quad$\cdot$\quad
+    \href{https://github.com/bushra931}{github.com/bushra931}
+    \quad$\cdot$\quad
     \href{https://leetcode.com/u/bushra_khan_007/}{leetcode.com/u/bushra\_khan\_007}
   }
 \end{center}
 
 \section{Professional Summary}
-\small{B.Tech CSE (Artificial Intelligence) student and Software Development Engineer Intern experienced in production web apps, RESTful APIs, and full-stack products using Java, C++, Python, JavaScript, TypeScript, React.js, Node.js, Express.js, FastAPI, Flutter, MySQL, and MongoDB. 500+ Data Structures and Algorithms (DSA) problems solved. Seeking Software Development Engineer (SDE) intern and full-time roles.}
+B.Tech CSE (Artificial Intelligence) student and Software Development Engineer Intern with experience building production web applications, REST APIs, and full-stack products. Core skills: Java, C++, Python, JavaScript, TypeScript, React.js, Node.js, Express.js, FastAPI, Flutter, MySQL, and MongoDB. 500+ Data Structures and Algorithms problems solved. Seeking SDE intern and full-time roles.
 
 \section{Education}
-\resumeSubHeadingListStart
-  \resumeSubheading
-    {Indira Gandhi Delhi Technical University for Women (IGDTUW)}{2023 -- 2027}
-    {B.Tech Computer Science and Engineering (Artificial Intelligence) \textbar\ CGPA: 8.695 / 10.0}{Delhi, India}
-  \resumeSubheading
-    {Central Board of Secondary Education (CBSE)}{2020 \& 2022}
-    {Class X: 92.8\% \textbar\ Class XII (PCM): 94.4\%}{Delhi, India}
-\resumeSubHeadingListEnd
+\role{Indira Gandhi Delhi Technical University for Women (IGDTUW)}{2023 -- 2027}
+{B.Tech Computer Science and Engineering (Artificial Intelligence) \textbar\ CGPA: 8.695 / 10.0}{Delhi, India}
+
+\role{Central Board of Secondary Education (CBSE)}{2020 \& 2022}
+{Class X: 92.8\% \textbar\ Class XII (PCM): 94.4\%}{Delhi, India}
 
 \section{Technical Skills}
-\begin{itemize}[leftmargin=0.05in, label={}]
-  \small{\item{
-    \textbf{Languages:} C++, Java, Python, JavaScript, TypeScript, Dart, PHP, SQL, HTML, CSS \\[0.5pt]
-    \textbf{Frameworks:} React.js, Node.js, Express.js, FastAPI, Flutter, Firebase, Tailwind CSS \\[0.5pt]
-    \textbf{Databases and APIs:} MySQL, MongoDB, Firebase Cloud Firestore, REST APIs, JWT Authentication \\[0.5pt]
-    \textbf{AI / ML:} Machine Learning, Deep Learning, Generative AI, TensorFlow, Keras, Scikit-learn, Random Forest, Prompt Engineering, Gemini API \\[0.5pt]
-    \textbf{CS Fundamentals:} Data Structures and Algorithms (DSA), Object-Oriented Programming (OOP), DBMS, Operating Systems, Computer Networks \\[0.5pt]
-    \textbf{Tools:} Git, GitHub, VS Code, Linux
-  }}
-\end{itemize}
+\renewcommand{\arraystretch}{1.45}
+\noindent\begin{tabular}{@{}>{\bfseries}p{0.22\linewidth}p{0.74\linewidth}@{}}
+Languages & C++, Java, Python, JavaScript, TypeScript, Dart, PHP, SQL, HTML, CSS \\
+Frameworks & React.js, Node.js, Express.js, FastAPI, Flutter, Firebase, Tailwind CSS \\
+Databases / APIs & MySQL, MongoDB, Firebase Cloud Firestore, REST APIs, JWT Authentication \\
+AI / ML & Machine Learning, Deep Learning, Generative AI, TensorFlow, Keras, Scikit-learn, Random Forest, Prompt Engineering, Gemini API \\
+CS Fundamentals & Data Structures and Algorithms (DSA), Object-Oriented Programming (OOP), DBMS, Operating Systems, Computer Networks \\
+Tools & Git, GitHub, VS Code, Linux \\
+\end{tabular}
 
 \section{Experience}
-\resumeSubHeadingListStart
+\role{Software Development Engineer (SDE) Intern}{Jan 2026 -- Jul 2026}
+{ITJOBXS}{Remote}
+\begin{itemize}
+  \item Developed and maintained 10+ responsive web pages for the Jobs and Education platform using HTML, CSS, JavaScript, PHP, and MySQL.
+  \item Implemented 5+ features including user registration, authentication, form validation, and database CRUD operations.
+  \item Integrated Google reCAPTCHA and bot detection, reducing spam registrations; resolved 20+ frontend and backend issues.
+\end{itemize}
 
-  \resumeSubheading
-    {Software Development Engineer (SDE) Intern}{January 2026 -- July 2026}
-    {ITJOBXS}{Remote}
-  \resumeItemListStart
-    \resumeItem{Developed and maintained 10+ responsive web pages for the Jobs and Education platform using HTML, CSS, JavaScript, PHP, and MySQL.}
-    \resumeItem{Implemented 5+ features including user registration, authentication, form validation, and database CRUD operations.}
-    \resumeItem{Integrated Google reCAPTCHA and bot detection, reducing spam registrations; resolved 20+ frontend and backend issues.}
-  \resumeItemListEnd
+\role{Information Technology Intern}{Dec 2025 -- Jan 2026}
+{Central Council for Research in Ayurvedic Sciences (CCRAS), Ministry of AYUSH}{New Delhi}
+\begin{itemize}
+  \item Designed RESTful APIs in FastAPI for AURA, a healthcare Progressive Web Application (PWA), serving 3 user roles.
+  \item Implemented backend logic using clinical parameters (Prakriti, Dosha, Ritu, Age, Gender) for personalized recommendations.
+  \item Built user-facing and doctor-facing modules, streamlining workflows on a government healthcare platform.
+\end{itemize}
 
-  \resumeSubheading
-    {Information Technology Intern}{December 2025 -- January 2026}
-    {Central Council for Research in Ayurvedic Sciences (CCRAS), Ministry of AYUSH}{New Delhi, India}
-  \resumeItemListStart
-    \resumeItem{Designed RESTful APIs in FastAPI for AURA, a rule-based healthcare Progressive Web Application (PWA), serving 3 user roles.}
-    \resumeItem{Implemented backend logic using clinical parameters (Prakriti, Dosha, Ritu, Age, Gender) for personalized healthcare recommendations.}
-    \resumeItem{Built user-facing and doctor-facing modules, streamlining end-to-end workflows on a government healthcare platform.}
-  \resumeItemListEnd
+\role{Deep Learning Intern}{Jun 2025 -- Jul 2025}
+{Anveshan Foundation}{Remote}
+\begin{itemize}
+  \item Fine-tuned a CNN in TensorFlow/Keras for potato disease classification (\textasciitilde95\% accuracy) and built a 5-stage ML pipeline (preprocess, augment, tune, train, evaluate).
+\end{itemize}
 
-  \resumeSubheading
-    {Deep Learning Intern}{June 2025 -- July 2025}
-    {Anveshan Foundation}{Remote}
-  \resumeItemListStart
-    \resumeItem{Fine-tuned a CNN in TensorFlow/Keras for potato disease classification, reaching about 95\% accuracy on PlantVillage (3 classes).}
-    \resumeItem{Built a 5+ stage ML pipeline: preprocessing, augmentation, hyperparameter tuning, training, and evaluation.}
-  \resumeItemListEnd
-
-\resumeSubHeadingListEnd
+\clearpage
 
 \section{Projects}
-\resumeSubHeadingListStart
+\project{\href{https://github.com/bushra931/veloura-dream-studio}{Veloura --- AI Fashion Design Platform}}{React.js \textbullet\ TypeScript \textbullet\ Node.js \textbullet\ Express.js \textbullet\ MongoDB \textbullet\ JWT \textbullet\ Gemini}
+\begin{itemize}
+  \item Built a full-stack MERN application with 10+ modules for AI-assisted design, conversational customization, designer/tailor collaboration, digital wardrobe, and order tracking.
+  \item Implemented JWT authentication, scalable REST APIs, and Gemini AI workflows for color and fabric recommendations.
+\end{itemize}
 
-  \resumeProjectHeading
-    {\href{https://github.com/bushra931/veloura-dream-studio}{Veloura} --- AI Fashion Design Platform \textbar\ React.js, TypeScript, Node.js, Express.js, MongoDB, JWT, Gemini}{}
-  \resumeItemListStart
-    \resumeItem{Built a full-stack MERN app with 10+ modules for AI-assisted design, customization, designer/tailor collaboration, wardrobe, and orders.}
-    \resumeItem{Implemented JWT authentication, REST APIs, and Gemini AI workflows for color/fabric recommendations.}
-  \resumeItemListEnd
+\project{\href{https://github.com/bushra931/Packify}{Packify --- AI Packaging Optimization}}{Python \textbullet\ Scikit-learn \textbullet\ Random Forest \textbullet\ React.js \textbullet\ Node.js}
+\begin{itemize}
+  \item Trained a Random Forest model to recommend packaging dimensions, cutting unused shipment space by 15--20\% and improving truck load efficiency by 10--15\%.
+\end{itemize}
 
-  \resumeProjectHeading
-    {\href{https://github.com/bushra931/Packify}{Packify} --- AI Packaging Optimization \textbar\ Python, Scikit-learn, Random Forest, React.js, Node.js}{}
-  \resumeItemListStart
-    \resumeItem{Trained a Random Forest model to recommend packaging dimensions, cutting unused space 15--20\% and improving load efficiency 10--15\%.}
-  \resumeItemListEnd
+\project{\href{https://github.com/bushra931/EveryBitee}{EveryBite --- AI Nutrition Guide}}{Flutter \textbullet\ Firebase \textbullet\ Gemini API \textbullet\ Prompt Engineering}
+\begin{itemize}
+  \item Built a barcode-scanning mobile app on Open Food Facts (2.5M+ products) and Gemini API for allergy-aware Generative AI diet insights.
+\end{itemize}
 
-  \resumeProjectHeading
-    {\href{https://github.com/bushra931/EveryBitee}{EveryBite} --- AI Nutrition Guide \textbar\ Flutter, Firebase, Gemini API, Prompt Engineering}{}
-  \resumeItemListStart
-    \resumeItem{Built a barcode-scanning app on Open Food Facts (2.5M+ products) and Gemini API for allergy-aware Generative AI diet insights.}
-  \resumeItemListEnd
-
-  \resumeProjectHeading
-    {Cooig --- College Social Platform \textbar\ Flutter, Firebase, Cloud Firestore, Firebase Authentication}{}
-  \resumeItemListStart
-    \resumeItem{Shipped a real-time mobile app with 5+ modules (Marketplace, Lost and Found, Noticeboard, Academic Resources), replacing 4+ campus tools.}
-  \resumeItemListEnd
-
-\resumeSubHeadingListEnd
+\project{Cooig --- College Social Platform}{Flutter \textbullet\ Firebase \textbullet\ Cloud Firestore \textbullet\ Firebase Authentication}
+\begin{itemize}
+  \item Shipped a real-time mobile app with 5+ modules (Marketplace, Lost and Found, Noticeboard, Academic Resources), replacing 4+ fragmented campus tools.
+\end{itemize}
 
 \section{Achievements}
-\begin{itemize}[leftmargin=0.15in]
-  \resumeItem{Solved 500+ DSA problems on LeetCode, GeeksforGeeks, Codeforces, and Striver (arrays, strings, linked lists, trees, graphs, DP).}
-  \resumeItem{\textbf{Flipkart GRiD 7.0 National Semi-Finalist (Top 2\%)} --- national software engineering competition.}
-  \resumeItem{\textbf{Smart India Hackathon Finalist} --- AI Indian Sign Language (ISL) accessibility app; selected among 100+ teams.}
-  \resumeItem{\textbf{Reliance Foundation Scholar} --- Top 5,000 of 58,000+ applicants. \textbf{Millennium Fellow 2025} --- Top 6\% globally (4,000 / 60,000+).}
+\begin{itemize}
+  \item Solved 500+ DSA problems on LeetCode, GeeksforGeeks, Codeforces, and Striver (arrays, strings, linked lists, trees, graphs, dynamic programming).
+  \item \textbf{Flipkart GRiD 7.0 National Semi-Finalist (Top 2\%)} --- national software engineering competition.
+  \item \textbf{Smart India Hackathon Finalist} --- AI Indian Sign Language (ISL) accessibility app; selected among 100+ teams.
+  \item \textbf{Reliance Foundation Scholar} --- Top 5,000 of 58,000+ applicants across India.
+  \item \textbf{Millennium Fellow, Class of 2025} --- Top 6\% globally (4,000 of 60,000+ applicants).
 \end{itemize}
 
 \section{Leadership}
-\begin{itemize}[leftmargin=0.15in]
-  \resumeItem{\textbf{Vice President, Zenovate (IGDTUW)} --- recruited 30+ members, ran 3+ technical events, grew participation 40\%.}
-  \resumeItem{\textbf{Volunteer, Margins to Mainstream Foundation} --- mentored 10+ JEE aspirants (20\% average score gain); 5+ programs, 200+ students.}
+\begin{itemize}
+  \item \textbf{Vice President, Zenovate (IGDTUW)} --- recruited 30+ members, organized 3+ technical events, and grew participation by 40\%.
+  \item \textbf{Volunteer, Margins to Mainstream Foundation} --- mentored 10+ JEE aspirants (20\% average score gain) and led 5+ outreach programs reaching 200+ students.
 \end{itemize}
 
 \end{document}
