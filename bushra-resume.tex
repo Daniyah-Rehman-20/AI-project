@@ -1,10 +1,11 @@
 %------------------------------------------------------------------------------
-% Bushra Khan -- SDE Resume | Overleaf pdfLaTeX | A4 | 1 page | ATS 97-style
-% No tables, no minipage, no icons, no two-column. Skills in top third.
+% Bushra Khan -- one-page A4 resume
+% Overleaf: Compiler = pdfLaTeX | Paper = A4 portrait
+% Built for Resume Worded: no tables, no minipage, no icons, no cliches
 %------------------------------------------------------------------------------
 \documentclass[a4paper,10pt]{article}
 
-\usepackage[top=0.68cm,bottom=0.68cm,left=1.1cm,right=1.1cm]{geometry}
+\usepackage[top=0.75cm,bottom=0.75cm,left=1.2cm,right=1.2cm]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
@@ -12,104 +13,109 @@
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage{microtype}
-\usepackage{xcolor}
 
-\definecolor{navy}{HTML}{0F2C59}
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 
 \hypersetup{
-  pdftitle={Bushra Khan Software Development Engineer Resume},
-  pdfauthor={Bushra Khan},
-  pdfsubject={Software Engineer Software Development Engineer Full Stack Developer},
-  pdfkeywords={Software Development Engineer, Software Engineer, Full Stack Developer, Java, C++, Python, JavaScript, TypeScript, React.js, Node.js, Express.js, SQL, MySQL, MongoDB, REST API, Data Structures, Algorithms, Object-Oriented Programming, Git, Linux, Machine Learning, Flutter, FastAPI}
+  pdftitle={Bushra Khan Resume},
+  pdfauthor={Bushra Khan}
 }
 
-\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0em}{\MakeUppercase}[\color{navy}\vspace{0.8pt}\titlerule]
-\titlespacing*{\section}{0pt}{5.5pt}{2.8pt}
-\setlist[itemize]{leftmargin=10.5pt, itemsep=1pt, topsep=1pt, parsep=0pt, partopsep=0pt}
+\titleformat{\section}{\normalsize\bfseries}{}{0em}{\MakeUppercase}[\vspace{1pt}\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+\setlist[itemize]{leftmargin=12pt, itemsep=1.6pt, topsep=1.6pt, parsep=0pt, partopsep=0pt}
 
-\newcommand{\job}[4]{%
-  \vspace{2.2pt}%
-  \noindent\textbf{#1} \hfill {\small #2}\\[0.2pt]
-  {\small\textit{#3}} \hfill {\small\textit{#4}}\par
-  \vspace{0.6pt}%
+\newcommand{\entry}[4]{%
+  \vspace{3pt}%
+  \noindent\textbf{#1} \hfill #2\\[0.4pt]
+  \textit{#3} \hfill \textit{#4}\par
+  \vspace{1pt}%
 }
 
 \begin{document}
-\fontsize{9.05}{10.75}\selectfont
+\small
 
 \begin{center}
-  {\LARGE\bfseries\color{navy}Bushra Khan}\\[2.5pt]
-  Software Development Engineer \textbar\ Software Engineer \textbar\ Full Stack Developer\\[3pt]
-  {\small New Delhi, India \textbar\ +91 7982389252 \textbar\ \href{mailto:bushrakhan1730@gmail.com}{bushrakhan1730@gmail.com}}\\[1.5pt]
-  {\small \href{https://www.linkedin.com/in/bushra-khan-a9ba06287/}{https://www.linkedin.com/in/bushra-khan-a9ba06287/} \textbar\
-  \href{https://github.com/bushra931}{https://github.com/bushra931} \textbar\
-  \href{https://leetcode.com/u/bushra_khan_007/}{https://leetcode.com/u/bushra\_khan\_007/}}
+  {\LARGE\bfseries Bushra Khan}\\[4pt]
+  Software Development Engineer\\[4pt]
+  New Delhi, India \textbar\ +91 7982389252 \textbar\
+  \href{mailto:bushrakhan1730@gmail.com}{bushrakhan1730@gmail.com}\\[2pt]
+  \href{https://www.linkedin.com/in/bushra-khan-a9ba06287/}{linkedin.com/in/bushra-khan-a9ba06287} \textbar\
+  \href{https://github.com/bushra931}{github.com/bushra931} \textbar\
+  \href{https://leetcode.com/u/bushra_khan_007/}{leetcode.com/u/bushra\_khan\_007}
 \end{center}
 
-\section{Professional Summary}
-Software Development Engineer intern and Bachelor of Technology student in Computer Science and Engineering (Artificial Intelligence) with professional experience in software development, full stack development, backend development, frontend development, and API development using Java, C++, Python, JavaScript, TypeScript, SQL, React.js, Node.js, Express.js, FastAPI, Flutter, MySQL, and MongoDB. Strong in Data Structures and Algorithms, Object-Oriented Programming, Database Management Systems, problem solving, debugging, software testing, and Git version control. Solved 500+ coding problems. Targeting Software Engineer and Software Development Engineer roles.
+\section{Summary}
+B.Tech Computer Science and Engineering (Artificial Intelligence) student at IGDTUW (CGPA 8.695 / 10.00) with 3 internships building web apps, REST APIs, and machine learning pipelines. Shipped 4 products using React.js, Node.js, FastAPI, Flutter, MySQL, and MongoDB. Solved 500+ Data Structures and Algorithms problems.
 
-\section{Skills}
-\noindent\textbf{Languages:} C++, Java, Python, JavaScript, TypeScript, Dart, PHP, SQL, HTML5, CSS3\\[0.6pt]
-\textbf{Software Development:} Full Stack Development, Backend Development, Frontend Development, REST API Development, Object-Oriented Programming, Data Structures and Algorithms, Software Testing, Debugging, Git, GitHub, Linux\\[0.6pt]
-\textbf{Frameworks and Tools:} React.js, Node.js, Express.js, FastAPI, Flutter, Firebase, MERN Stack, JWT Authentication, Tailwind CSS, VS Code\\[0.6pt]
-\textbf{Databases:} MySQL, MongoDB, SQL, Database Management Systems, Create Read Update Delete (CRUD)\\[0.6pt]
-\textbf{Machine Learning:} Machine Learning, Deep Learning, TensorFlow, Keras, Scikit-learn, Random Forest, Generative AI, Prompt Engineering\\[0.6pt]
-\textbf{Core Competencies:} Problem Solving, Team Collaboration, Communication, Leadership, Version Control, Agile Teamwork, Code Review, Documentation
+\section{Education}
+\entry{Indira Gandhi Delhi Technical University for Women (IGDTUW)}{August 2023 to May 2027}
+{Bachelor of Technology, Computer Science and Engineering (Artificial Intelligence)}{New Delhi}
+\noindent CGPA: 8.695 / 10.00 \quad Coursework: Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networks, Machine Learning\\[3pt]
+\noindent\textbf{Central Board of Secondary Education (CBSE)} \hfill 2020 and 2022\\[0.4pt]
+\textit{Class X: 92.8\% \quad Class XII (Physics, Chemistry, Mathematics): 94.4\%} \hfill \textit{Delhi, India}
 
-\section{Professional Experience}
-\job{Software Development Engineer Intern}{January 2026 to July 2026}
-{ITJOBXS \textbar\ Software Development}{Remote, India}
+\section{Work Experience}
+\entry{Software Development Engineer Intern}{January 2026 to July 2026}
+{ITJOBXS}{Remote}
 \begin{itemize}
-  \item Developed and maintained 10+ responsive web pages for a production jobs platform using HTML5, CSS3, JavaScript, PHP, SQL, and MySQL, improving frontend usability.
-  \item Implemented 5+ software features including user registration, login authentication, form validation, and Create Read Update Delete (CRUD) database operations.
-  \item Debugged 20+ frontend and backend defects, integrated Google reCAPTCHA, and collaborated with the software engineering team on testing and code quality.
+  \item Created 10+ responsive pages in HTML, CSS, JavaScript, PHP, and MySQL for a jobs and education website.
+  \item Added 5 user flows: registration, login, input validation, and Create, Read, Update, Delete (CRUD) database actions.
+  \item Wired Google reCAPTCHA and closed 20+ frontend and backend bugs, which cut spam sign-ups.
 \end{itemize}
 
-\job{Information Technology Intern}{December 2025 to January 2026}
-{Central Council for Research in Ayurvedic Sciences (CCRAS), Ministry of AYUSH}{New Delhi, India}
+\entry{Information Technology Intern}{December 2025 to January 2026}
+{Central Council for Research in Ayurvedic Sciences (CCRAS), Ministry of AYUSH}{New Delhi}
 \begin{itemize}
-  \item Designed and developed RESTful APIs in Python and FastAPI for AURA, a healthcare Progressive Web Application, enabling frontend and backend communication for 3 user roles.
-  \item Implemented backend business logic and data models to generate personalized healthcare recommendations and improve doctor and patient workflows.
+  \item Wrote REST APIs in Python (FastAPI) for AURA, a healthcare Progressive Web App used by 3 roles.
+  \item Coded recommendation rules from clinical fields so doctors and patients received tailored outputs.
 \end{itemize}
 
-\job{Deep Learning Intern}{June 2025 to July 2025}
-{Anveshan Foundation \textbar\ Machine Learning}{Remote, India}
+\entry{Deep Learning Intern}{June 2025 to July 2025}
+{Anveshan Foundation}{Remote}
 \begin{itemize}
-  \item Fine-tuned a Convolutional Neural Network in TensorFlow and Keras for image classification, achieving about 95\% accuracy, and delivered a 5-stage machine learning pipeline including preprocessing, training, and evaluation.
+  \item Trained a Convolutional Neural Network in TensorFlow and Keras for crop-disease images and reached 95\% accuracy.
+  \item Ran a 5-step pipeline: preprocess, augment, tune, train, and evaluate.
 \end{itemize}
 
 \section{Projects}
-\vspace{1.5pt}
-\noindent\textbf{\href{https://github.com/bushra931/veloura-dream-studio}{Veloura} Full Stack Web Application} \hfill {\small React.js, TypeScript, Node.js, Express.js, MongoDB, JWT}
+\entry{\href{https://github.com/bushra931/veloura-dream-studio}{Veloura}}{React.js, TypeScript, Node.js, Express.js, MongoDB}
+{MERN fashion studio with JWT login and Gemini recommendations}{}
 \begin{itemize}
-  \item Built a MERN full stack web application with 10+ modules, JWT authentication, REST API development, and Gemini Generative AI recommendations.
+  \item Delivered 10+ modules covering design chat, wardrobe, orders, and JWT-secured REST endpoints.
 \end{itemize}
-\noindent\textbf{\href{https://github.com/bushra931/Packify}{Packify} Machine Learning Web Application} \hfill {\small Python, Scikit-learn, Random Forest, React.js, Node.js}
+
+\entry{\href{https://github.com/bushra931/Packify}{Packify}}{Python, Scikit-learn, Random Forest, React.js, Node.js}
+{Shipment-box size predictor}{}
 \begin{itemize}
-  \item Trained a Random Forest machine learning model to recommend packaging dimensions, reducing unused shipment space by 15\% to 20\% and improving load efficiency by 10\% to 15\%.
+  \item Fitted a Random Forest regressor that cut empty box space 15\% to 20\% and raised truck fill 10\% to 15\%.
 \end{itemize}
-\noindent\textbf{\href{https://github.com/bushra931/EveryBitee}{EveryBite} Mobile Application} \hfill {\small Flutter, Firebase, Gemini API, Prompt Engineering}
+
+\entry{\href{https://github.com/bushra931/EveryBitee}{EveryBite}}{Flutter, Firebase, Gemini API}
+{Barcode nutrition app}{}
 \begin{itemize}
-  \item Developed a Flutter and Firebase mobile application integrating Open Food Facts (2.5 million+ products) and Gemini API for Generative AI nutrition insights.
+  \item Queried Open Food Facts (2.5 million+ items) and Gemini to flag allergens and suggest safer foods.
 \end{itemize}
-\noindent\textbf{Cooig Mobile Application} \hfill {\small Flutter, Firebase, Cloud Firestore, Firebase Authentication}
-{\small\quad Shipped a real-time Flutter app with 5+ modules, replacing 4+ campus tools.}
 
-\section{Education}
-\job{Bachelor of Technology in Computer Science and Engineering (Artificial Intelligence)}{August 2023 to May 2027}
-{Indira Gandhi Delhi Technical University for Women (IGDTUW) \textbar\ CGPA: 8.695 / 10.00}{New Delhi, India}
-
-\noindent{\small\textbf{Coursework:} Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networks, Machine Learning, Artificial Intelligence, Software Engineering}\\[2pt]
-\noindent{\small\textbf{Central Board of Secondary Education (CBSE):} Class X 92.8\% (2020) \textbar\ Class XII Physics Chemistry Mathematics 94.4\% (2022) \textbar\ Delhi, India}
-
-\section{Achievements}
+\entry{Cooig}{Flutter, Firebase, Cloud Firestore}
+{Campus app: marketplace, lost and found, noticeboard, notes}{}
 \begin{itemize}
-  \item Solved 500+ Data Structures and Algorithms problems on LeetCode, GeeksforGeeks, Codeforces, and Striver (arrays, strings, linked lists, trees, graphs, dynamic programming).
-  \item Flipkart GRiD 7.0 National Semi-Finalist (Top 2\%); Smart India Hackathon Finalist; Reliance Foundation Scholar; Millennium Fellow 2025 (Top 6\% globally); Vice President, Zenovate (30+ members).
+  \item Combined 4 campus services into 5 in-app modules for real-time student use.
+\end{itemize}
+
+\section{Skills}
+\noindent\textbf{Languages:} C++, Java, Python, JavaScript, TypeScript, PHP, SQL, HTML, CSS, Dart\\[2pt]
+\textbf{Frameworks:} React.js, Node.js, Express.js, FastAPI, Flutter, Firebase, TensorFlow, Keras, Scikit-learn\\[2pt]
+\textbf{Data:} MySQL, MongoDB, REST APIs, JWT, Git, Linux
+
+\section{Awards}
+\begin{itemize}
+  \item Flipkart GRiD 7.0 National Semi-Finalist (Top 2\%).
+  \item Smart India Hackathon Finalist, Indian Sign Language accessibility app.
+  \item Reliance Foundation Scholar (Top 5,000 of 58,000+). Millennium Fellow 2025 (Top 6\% globally).
+  \item Vice President, Zenovate (IGDTUW): 30+ members, 3 events, 40\% higher turnout.
 \end{itemize}
 
 \end{document}
