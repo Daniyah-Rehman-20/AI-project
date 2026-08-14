@@ -1,9 +1,3 @@
-%-------------------------
-% Bushra Khan — Design Automation Resume (AltaCV)
-% Keep AltaCV look; content tailored for Design Automation & Infrastructure
-% Overleaf: use AltaCV template + this main file + page1sidebar.tex
-% Compiler: pdfLaTeX (or XeLaTeX if using Carlito)
-%-------------------------
 \documentclass[9pt,a4paper,ragged2e]{altacv}
 \geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
 \ifxetexorluatex
@@ -16,9 +10,9 @@
   \hypersetup{
     colorlinks=true,
     linkcolor=blue,
-    filecolor=magenta,
+    filecolor=magenta,      
     urlcolor=blue,
-    pdftitle={Bushra Khan Resume},
+    pdftitle={Overleaf Example},
     pdfpagemode=FullScreen,
     }
 \fi
@@ -37,23 +31,37 @@
 
 \begin{document}
 \name{Bushra Khan}
-\tagline{Design Automation \textbar\ Python \textbar\ AI \textbar\ Software Engineering}
+\tagline{Software Engineer Intern}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
 %\photo{3.3cm}{profile.jpg}
 \personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+
   \email{bushrakhan1730@gmail.com}
 %   \phone{000-00-0000}
+%  \mailaddress{Address, Street, 00000 County}
   \location{Delhi - India}
+%  \homepage{marissamayr.tumblr.com/}
+%  \twitter{@marissamayer}
   \linkedin{\href{https://www.linkedin.com/in/bushra-khan-a9ba06287/}{Linkedin}}
   \github{\href{https://github.com/bushra931}{Github}}
   \leetcode{\href{https://leetcode.com/u/bushra_khan_007/}{Leetcode}}
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
 }
 
+%% Make the header extend all the way to the right, if you want.
 \begin{fullwidth}
 \makecvheader
 \end{fullwidth}
 
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
 \AtBeginEnvironment{itemize}{\small}
 
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
 \cvsection[page1sidebar]{Experience}
 
 \cvevent{\textbf{Software Development Engineer (SDE) Intern}}
@@ -63,19 +71,19 @@
 
 \begin{itemize}
 
-\item Built and maintained \textbf{scalable software modules} for a production Jobs \& Education platform using JavaScript, PHP, and MySQL --- focusing on automation of user workflows and data operations.
+\item Developed and maintained \textbf{10+ responsive web pages} for the ITJOBXS Jobs \& Education platform using HTML, CSS, JavaScript and MySQL.
 
 \smallskip
 
-\item Implemented \textbf{5+ end-to-end features} including registration, authentication, form validation, and database operations to automate repetitive configuration and verification tasks.
+\item Implemented \textbf{5+ user-facing features}, including user registration, authentication, form validation, and database operations using PHP and MySQL.
 
 \smallskip
 
-\item Integrated Google reCAPTCHA and contributed to bot-detection mechanisms, strengthening \textbf{verification} pipelines and reducing spam registrations through automated checks.
+\item Integrated Google reCAPTCHA and contributed to bot detection mechanisms, improving user verification and reducing spam registrations on the platform.
 
 \smallskip
 
-\item Collaborated with engineering teams to resolve \textbf{20+ frontend and backend issues}, improve deployment reliability, and enhance platform functionality through iterative software development.
+\item Collaborated with the development team to resolve \textbf{20+ frontend and backend issues}, test new features, and enhance website functionality and user experience.
 
 \end{itemize}
 
@@ -88,17 +96,19 @@
 
 \begin{itemize}
 
-\item Designed and developed \textbf{RESTful APIs} using \textbf{Python (FastAPI)} for \textbf{AURA}, a rule-based healthcare Progressive Web Application, enabling scalable communication across \textbf{3 user roles}.
+\item Designed and developed \textbf{RESTful APIs} using \textbf{FastAPI} for \textbf{AURA}, a rule-based healthcare Progressive Web Application (PWA), enabling seamless communication between frontend and backend for \textbf{3 user roles}.
 
 \smallskip
 
-\item Built backend automation by encoding clinical decision parameters (\textbf{Prakriti, Dosha, Ritu, Age, Gender}) into a rule-driven recommendation framework --- analogous to methodology-driven engineering workflows.
+\item Implemented backend business logic by integrating Ayurvedic clinical parameters including \textbf{Prakriti, Dosha, Ritu, Age,} and \textbf{Gender} to generate personalized healthcare recommendations.
 
 \smallskip
 
-\item Developed and integrated \textbf{user-facing} and \textbf{doctor-facing} modules, streamlining end-to-end design flow of a government healthcare platform with improved usability and reliability.
+\item Developed and integrated \textbf{user-facing} and \textbf{doctor-facing} modules, improving application usability and streamlining end-to-end workflows for a government healthcare platform.
 
 \end{itemize}
+
+%\divider
 
 \cvsection{Achievements}
 
@@ -106,7 +116,7 @@
 
 \item Solved \textbf{500+ Data Structures \& Algorithms (DSA)} problems across \textbf{LeetCode, GeeksforGeeks, Codeforces, and Striver (Take U Forward)}.
 
-\item \textbf{Flipkart GRiD 7.0 National Semi-Finalist (Top 2\%)} -- Selected from thousands of participants nationwide.
+\item \textbf{Flipkart GRiD 7.0 National Semi-Finalist (Top 2\%)} --Selected from thousands of participants nationwide.
 
 \item \textbf{Smart India Internal Hackathon Finalist} -- Developed an AI-powered Indian Sign Language (ISL) accessibility solution, selected among \textbf{100+ teams} for innovation and technical excellence.
 
@@ -115,59 +125,97 @@
 \item \textbf{Millennium Fellow, Class of 2025} -- Selected among the \textbf{Top 6\% globally} (4,000 of 60,000+ applicants) for leadership, problem-solving, and global collaboration.
 
 \end{itemize}
-
+\\
 \cvsection{Technical Skills}
 
 \begin{itemize}
 
-\item \large{\textbf{Programming}}
+\item \large{\textbf{Programming Languages}}
 \begin{itemize}
-\item Python, C++, Java, JavaScript, TypeScript, SQL, Bash
+\item C++, Java, Python, JavaScript, TypeScript, Dart
 \end{itemize}
 
 \smallskip
 
-\item \large{\textbf{Automation \& Scripting}}
+\item \large{\textbf{Frameworks \& Libraries}}
 \begin{itemize}
-\item Python Scripting, FastAPI, REST APIs, Linux, Git, Framework Development, Tool Development
+\item React.js, Node.js, Express.js, Flutter, FastAPI, Firebase, Tailwind CSS, HTML, CSS
 \end{itemize}
 
 \smallskip
 
-\item \large{\textbf{AI, ML \& Analytics}}
+\item \large{\textbf{Databases}}
 \begin{itemize}
-\item Machine Learning, Deep Learning, Scikit-learn, TensorFlow, Keras, Generative AI, Data Analytics, Algorithms, Optimization
+\item MongoDB, MySQL, Firebase Firestore
 \end{itemize}
 
 \smallskip
 
-\item \large{\textbf{Backend \& Infrastructure}}
+\item \large{\textbf{AI / Machine Learning}}
 \begin{itemize}
-\item Node.js, Express.js, MongoDB, MySQL, Firebase, Cloud Services, Scalable Systems
+\item Machine Learning, Deep Learning, Generative AI, Scikit-learn, TensorFlow, Keras, Prompt Engineering
 \end{itemize}
 
 \smallskip
 
-\item \large{\textbf{Core Engineering}}
+\item \large{\textbf{Core Concepts}}
 \begin{itemize}
-\item Data Structures \& Algorithms, OOP, DBMS, Operating Systems, Computer Networks, Design Methodology, JWT Authentication
+\item Data Structures \& Algorithms, Object-Oriented Programming (OOP), DBMS, Operating Systems, Computer Networks, REST APIs, JWT Authentication
 \end{itemize}
 
 \smallskip
 
 \item \large{\textbf{Developer Tools}}
 \begin{itemize}
-\item Git, GitHub, VS Code, Jupyter
+\item Git, GitHub, VS Code
 \end{itemize}
 
 \end{itemize}
 
-\cvsection{Technical Interests}
 
-\begin{itemize}
-\item Design Automation \textbullet\ AI for Engineering Workflows \textbullet\ Python Automation \textbullet\ Infrastructure \& Scalable Systems \textbullet\ Data Analytics \textbullet\ Machine Learning \textbullet\ Pre-Silicon / Design Methodology
-\end{itemize}
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+%\cvsection{A Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+% \wheelchart{1.5cm}{0.5cm}{%
+%   10/10em/accent!30/Sleeping \& dreaming about work,
+%   25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+%   5/13em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
+%   20/15em/accent!40/Spending time with family,
+%   5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
+%   30/9em/accent/Showing Yahoo!\ employees that their work has meaning,
+%   5/8em/accent!20/Baking cupcakes
+% }
 
 \clearpage
+
+% \cvsection[page2sidebar]{Publications}
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+% %% If the NEXT page doesn't start with a \cvsection but you'd
+% %% still like to add a sidebar, then use this command on THIS
+% %% page to add it. The optional argument lets you pull up the
+% %% sidebar a bit so that it looks aligned with the top of the
+% %% main column.
+% % \addnextpagesidebar[-1ex]{page3sidebar}
+
 
 \end{document}
