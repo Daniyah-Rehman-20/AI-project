@@ -1,0 +1,173 @@
+%-------------------------
+% Bushra Khan — Design Automation Resume (AltaCV)
+% Keep AltaCV look; content tailored for Design Automation & Infrastructure
+% Overleaf: use AltaCV template + this main file + page1sidebar.tex
+% Compiler: pdfLaTeX (or XeLaTeX if using Carlito)
+%-------------------------
+\documentclass[9pt,a4paper,ragged2e]{altacv}
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+\ifxetexorluatex
+  \setmainfont{Carlito}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+  \usepackage{hyperref}
+  \hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Bushra Khan Resume},
+    pdfpagemode=FullScreen,
+    }
+\fi
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% Custom info field for LeetCode (not built into altacv by default)
+\newcommand{\leetcode}[1]{\printinfo{\faCode}{#1}}
+
+\begin{document}
+\name{Bushra Khan}
+\tagline{Design Automation \textbar\ Python \textbar\ AI \textbar\ Software Engineering}
+%\photo{3.3cm}{profile.jpg}
+\personalinfo{%
+  \email{bushrakhan1730@gmail.com}
+%   \phone{000-00-0000}
+  \location{Delhi - India}
+  \linkedin{\href{https://www.linkedin.com/in/bushra-khan-a9ba06287/}{Linkedin}}
+  \github{\href{https://github.com/bushra931}{Github}}
+  \leetcode{\href{https://leetcode.com/u/bushra_khan_007/}{Leetcode}}
+}
+
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+\AtBeginEnvironment{itemize}{\small}
+
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{\textbf{Software Development Engineer (SDE) Intern}}
+{\href{https://www.itjobxs.com}{ITJOBXS}}
+{\textbf{Jan 2026 -- Jul 2026}}
+{\textbf{Remote}}
+
+\begin{itemize}
+
+\item Built and maintained \textbf{scalable software modules} for a production Jobs \& Education platform using JavaScript, PHP, and MySQL --- focusing on automation of user workflows and data operations.
+
+\smallskip
+
+\item Implemented \textbf{5+ end-to-end features} including registration, authentication, form validation, and database operations to automate repetitive configuration and verification tasks.
+
+\smallskip
+
+\item Integrated Google reCAPTCHA and contributed to bot-detection mechanisms, strengthening \textbf{verification} pipelines and reducing spam registrations through automated checks.
+
+\smallskip
+
+\item Collaborated with engineering teams to resolve \textbf{20+ frontend and backend issues}, improve deployment reliability, and enhance platform functionality through iterative software development.
+
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Information Technology Intern}}
+{\href{https://www.ccras.nic.in}{Central Council for Research in Ayurvedic Sciences (CCRAS), Ministry of AYUSH}}
+{\textbf{Dec 2025 -- Jan 2026}}
+{\textbf{New Delhi, India}}
+
+\begin{itemize}
+
+\item Designed and developed \textbf{RESTful APIs} using \textbf{Python (FastAPI)} for \textbf{AURA}, a rule-based healthcare Progressive Web Application, enabling scalable communication across \textbf{3 user roles}.
+
+\smallskip
+
+\item Built backend automation by encoding clinical decision parameters (\textbf{Prakriti, Dosha, Ritu, Age, Gender}) into a rule-driven recommendation framework --- analogous to methodology-driven engineering workflows.
+
+\smallskip
+
+\item Developed and integrated \textbf{user-facing} and \textbf{doctor-facing} modules, streamlining end-to-end design flow of a government healthcare platform with improved usability and reliability.
+
+\end{itemize}
+
+\cvsection{Achievements}
+
+\begin{itemize}
+
+\item Solved \textbf{500+ Data Structures \& Algorithms (DSA)} problems across \textbf{LeetCode, GeeksforGeeks, Codeforces, and Striver (Take U Forward)}.
+
+\item \textbf{Flipkart GRiD 7.0 National Semi-Finalist (Top 2\%)} -- Selected from thousands of participants nationwide.
+
+\item \textbf{Smart India Internal Hackathon Finalist} -- Developed an AI-powered Indian Sign Language (ISL) accessibility solution, selected among \textbf{100+ teams} for innovation and technical excellence.
+
+\item \textbf{Reliance Foundation Scholar} -- Awarded among the \textbf{Top 5,000} students from \textbf{58,000+} applicants across India.
+
+\item \textbf{Millennium Fellow, Class of 2025} -- Selected among the \textbf{Top 6\% globally} (4,000 of 60,000+ applicants) for leadership, problem-solving, and global collaboration.
+
+\end{itemize}
+
+\cvsection{Technical Skills}
+
+\begin{itemize}
+
+\item \large{\textbf{Programming}}
+\begin{itemize}
+\item Python, C++, Java, JavaScript, TypeScript, SQL, Bash
+\end{itemize}
+
+\smallskip
+
+\item \large{\textbf{Automation \& Scripting}}
+\begin{itemize}
+\item Python Scripting, FastAPI, REST APIs, Linux, Git, Framework Development, Tool Development
+\end{itemize}
+
+\smallskip
+
+\item \large{\textbf{AI, ML \& Analytics}}
+\begin{itemize}
+\item Machine Learning, Deep Learning, Scikit-learn, TensorFlow, Keras, Generative AI, Data Analytics, Algorithms, Optimization
+\end{itemize}
+
+\smallskip
+
+\item \large{\textbf{Backend \& Infrastructure}}
+\begin{itemize}
+\item Node.js, Express.js, MongoDB, MySQL, Firebase, Cloud Services, Scalable Systems
+\end{itemize}
+
+\smallskip
+
+\item \large{\textbf{Core Engineering}}
+\begin{itemize}
+\item Data Structures \& Algorithms, OOP, DBMS, Operating Systems, Computer Networks, Design Methodology, JWT Authentication
+\end{itemize}
+
+\smallskip
+
+\item \large{\textbf{Developer Tools}}
+\begin{itemize}
+\item Git, GitHub, VS Code, Jupyter
+\end{itemize}
+
+\end{itemize}
+
+\cvsection{Technical Interests}
+
+\begin{itemize}
+\item Design Automation \textbullet\ AI for Engineering Workflows \textbullet\ Python Automation \textbullet\ Infrastructure \& Scalable Systems \textbullet\ Data Analytics \textbullet\ Machine Learning \textbullet\ Pre-Silicon / Design Methodology
+\end{itemize}
+
+\clearpage
+
+\end{document}
