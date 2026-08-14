@@ -1,0 +1,121 @@
+%------------------------------------------------------------------------------
+% Bushra Khan -- one-page A4 resume
+% Overleaf: Compiler = pdfLaTeX | Paper = A4 portrait
+% Built for Resume Worded: no tables, no minipage, no icons, no cliches
+%------------------------------------------------------------------------------
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[top=0.75cm,bottom=0.75cm,left=1.2cm,right=1.2cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\hypersetup{
+  pdftitle={Bushra Khan Resume},
+  pdfauthor={Bushra Khan}
+}
+
+\titleformat{\section}{\normalsize\bfseries}{}{0em}{\MakeUppercase}[\vspace{1pt}\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+\setlist[itemize]{leftmargin=12pt, itemsep=1.6pt, topsep=1.6pt, parsep=0pt, partopsep=0pt}
+
+\newcommand{\entry}[4]{%
+  \vspace{3pt}%
+  \noindent\textbf{#1} \hfill #2\\[0.4pt]
+  \textit{#3} \hfill \textit{#4}\par
+  \vspace{1pt}%
+}
+
+\begin{document}
+\small
+
+\begin{center}
+  {\LARGE\bfseries Bushra Khan}\\[4pt]
+  Software Development Engineer\\[4pt]
+  New Delhi, India \textbar\ +91 7982389252 \textbar\
+  \href{mailto:bushrakhan1730@gmail.com}{bushrakhan1730@gmail.com}\\[2pt]
+  \href{https://www.linkedin.com/in/bushra-khan-a9ba06287/}{linkedin.com/in/bushra-khan-a9ba06287} \textbar\
+  \href{https://github.com/bushra931}{github.com/bushra931} \textbar\
+  \href{https://leetcode.com/u/bushra_khan_007/}{leetcode.com/u/bushra\_khan\_007}
+\end{center}
+
+\section{Summary}
+B.Tech Computer Science and Engineering (Artificial Intelligence) student at IGDTUW (CGPA 8.695 / 10.00) with 3 internships building web apps, REST APIs, and machine learning pipelines. Shipped 4 products using React.js, Node.js, FastAPI, Flutter, MySQL, and MongoDB. Solved 500+ Data Structures and Algorithms problems.
+
+\section{Education}
+\entry{Indira Gandhi Delhi Technical University for Women (IGDTUW)}{August 2023 to May 2027}
+{Bachelor of Technology, Computer Science and Engineering (Artificial Intelligence)}{New Delhi}
+\noindent CGPA: 8.695 / 10.00 \quad Coursework: Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networks, Machine Learning\\[3pt]
+\noindent\textbf{Central Board of Secondary Education (CBSE)} \hfill 2020 and 2022\\[0.4pt]
+\textit{Class X: 92.8\% \quad Class XII (Physics, Chemistry, Mathematics): 94.4\%} \hfill \textit{Delhi, India}
+
+\section{Work Experience}
+\entry{Software Development Engineer Intern}{January 2026 to July 2026}
+{ITJOBXS}{Remote}
+\begin{itemize}
+  \item Created 10+ responsive pages in HTML, CSS, JavaScript, PHP, and MySQL for a jobs and education website.
+  \item Added 5 user flows: registration, login, input validation, and Create, Read, Update, Delete (CRUD) database actions.
+  \item Wired Google reCAPTCHA and closed 20+ frontend and backend bugs, which cut spam sign-ups.
+\end{itemize}
+
+\entry{Information Technology Intern}{December 2025 to January 2026}
+{Central Council for Research in Ayurvedic Sciences (CCRAS), Ministry of AYUSH}{New Delhi}
+\begin{itemize}
+  \item Wrote REST APIs in Python (FastAPI) for AURA, a healthcare Progressive Web App used by 3 roles.
+  \item Coded recommendation rules from clinical fields so doctors and patients received tailored outputs.
+\end{itemize}
+
+\entry{Deep Learning Intern}{June 2025 to July 2025}
+{Anveshan Foundation}{Remote}
+\begin{itemize}
+  \item Trained a Convolutional Neural Network in TensorFlow and Keras for crop-disease images and reached 95\% accuracy.
+  \item Ran a 5-step pipeline: preprocess, augment, tune, train, and evaluate.
+\end{itemize}
+
+\section{Projects}
+\entry{\href{https://github.com/bushra931/veloura-dream-studio}{Veloura}}{React.js, TypeScript, Node.js, Express.js, MongoDB}
+{MERN fashion studio with JWT login and Gemini recommendations}{}
+\begin{itemize}
+  \item Delivered 10+ modules covering design chat, wardrobe, orders, and JWT-secured REST endpoints.
+\end{itemize}
+
+\entry{\href{https://github.com/bushra931/Packify}{Packify}}{Python, Scikit-learn, Random Forest, React.js, Node.js}
+{Shipment-box size predictor}{}
+\begin{itemize}
+  \item Fitted a Random Forest regressor that cut empty box space 15\% to 20\% and raised truck fill 10\% to 15\%.
+\end{itemize}
+
+\entry{\href{https://github.com/bushra931/EveryBitee}{EveryBite}}{Flutter, Firebase, Gemini API}
+{Barcode nutrition app}{}
+\begin{itemize}
+  \item Queried Open Food Facts (2.5 million+ items) and Gemini to flag allergens and suggest safer foods.
+\end{itemize}
+
+\entry{Cooig}{Flutter, Firebase, Cloud Firestore}
+{Campus app: marketplace, lost and found, noticeboard, notes}{}
+\begin{itemize}
+  \item Combined 4 campus services into 5 in-app modules for real-time student use.
+\end{itemize}
+
+\section{Skills}
+\noindent\textbf{Languages:} C++, Java, Python, JavaScript, TypeScript, PHP, SQL, HTML, CSS, Dart\\[2pt]
+\textbf{Frameworks:} React.js, Node.js, Express.js, FastAPI, Flutter, Firebase, TensorFlow, Keras, Scikit-learn\\[2pt]
+\textbf{Data:} MySQL, MongoDB, REST APIs, JWT, Git, Linux
+
+\section{Awards}
+\begin{itemize}
+  \item Flipkart GRiD 7.0 National Semi-Finalist (Top 2\%).
+  \item Smart India Hackathon Finalist, Indian Sign Language accessibility app.
+  \item Reliance Foundation Scholar (Top 5,000 of 58,000+). Millennium Fellow 2025 (Top 6\% globally).
+  \item Vice President, Zenovate (IGDTUW): 30+ members, 3 events, 40\% higher turnout.
+\end{itemize}
+
+\end{document}
