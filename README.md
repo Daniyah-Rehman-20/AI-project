@@ -1,6 +1,6 @@
 # Bushra Khan — ATS-optimized SDE resume (Overleaf)
 
-Single-column `pdfLaTeX` resume targeting Software Development Engineer roles. Two-column templates (including AltaCV) often drop to low ATS parse scores because parsers read columns out of order, skip sidebars, and miss icon-only contact fields.
+Single-column **one-page** A4 `pdfLaTeX` resume targeting Software Development Engineer roles.
 
 ## Overleaf
 
