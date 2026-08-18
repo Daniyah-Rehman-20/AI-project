@@ -1,0 +1,117 @@
+%------------------------------------------------------------------------------
+% Daniyah Rehman -- Salesforce Associate Technical Support Engineer
+% Overleaf: pdfLaTeX | A4 portrait | 1 page
+% ATS / Resume Worded: no tables, no minipage, no icons, no cliches
+%------------------------------------------------------------------------------
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[top=0.75cm,bottom=0.75cm,left=1.2cm,right=1.2cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\hypersetup{
+  pdftitle={Daniyah Rehman Associate Technical Support Engineer Resume},
+  pdfauthor={Daniyah Rehman}
+}
+
+\titleformat{\section}{\normalsize\bfseries}{}{0em}{\MakeUppercase}[\vspace{1pt}\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+\setlist[itemize]{leftmargin=12pt, itemsep=1.5pt, topsep=1.5pt, parsep=0pt, partopsep=0pt}
+
+\newcommand{\entry}[4]{%
+  \vspace{3pt}%
+  \noindent\textbf{#1} \hfill #2\\[0.4pt]
+  \textit{#3} \hfill \textit{#4}\par
+  \vspace{1pt}%
+}
+
+\begin{document}
+\small
+
+\begin{center}
+  {\LARGE\bfseries Daniyah Rehman}\\[4pt]
+  Associate Technical Support Engineer \textbar\ Technical Support \textbar\ Cloud and AI\\[4pt]
+  New Delhi, India \textbar\ +91 8178507642 \textbar\
+  \href{mailto:daniyah029bteceai23@igdtuw.ac.in}{daniyah029bteceai23@igdtuw.ac.in}\\[2pt]
+  \href{https://www.linkedin.com/in/daniyah-rehman}{linkedin.com/in/daniyah-rehman} \textbar\
+  \href{https://github.com/daniyah-rehman}{github.com/daniyah-rehman} \textbar\
+  English (Fluent)
+\end{center}
+
+\section{Summary}
+B.Tech Electronics and Communication Engineering (AI) student at IGDTUW (CGPA 9.28 / 10.00) applying for Associate Technical Support Engineer. Three internships in cloud operations, AI systems, and web platforms: troubleshooting production issues, writing technical documentation, and using automation and Generative AI to cut repetitive work. Fluent written and spoken English. OCI Generative AI Professional (2025).
+
+\section{Skills}
+\noindent\textbf{Support:} Technical Support, Troubleshooting, Case Documentation, User Management, Data Management, Escalation Judgment, Process Improvement\\[2pt]
+\textbf{Languages:} Python, C++, C, JavaScript, SQL, HTML, CSS, English (Fluent)\\[2pt]
+\textbf{Platforms:} REST APIs, JWT, Linux, Git, GitHub, Postman, Node.js, Express.js, React, PostgreSQL, MongoDB\\[2pt]
+\textbf{Cloud and AI:} AWS, OCI, Kubernetes, Ansible, Generative AI, LLMs, RAG, NLP, Computer Vision, Data Analysis, Automation
+
+\section{Work Experience}
+\entry{Software Engineering Intern, Cloud Security}{May 2026 to July 2026}
+{Microsoft India}{Hyderabad}
+\begin{itemize}
+  \item Troubleshot SSH host-key trust failures and replaced Trust-On-First-Use with a Python verification framework on Kubernetes and Ansible, lowering man-in-the-middle risk.
+  \item Automated key discovery and distribution for 500+ hosts with centralized validation and written runbooks for operators.
+  \item Cut manual key-management effort by 65\% during a legacy SSH migration using Kubernetes sync workflows.
+\end{itemize}
+
+\entry{Artificial Intelligence Research Intern}{June 2025 to July 2025}
+{Proglint}{Remote}
+\begin{itemize}
+  \item Diagnosed object-detection errors in a YOLO and OpenCV pipeline and reached 92\% precision on 5,000+ labeled images.
+  \item Automated Python preprocessing and data checks, reducing manual cleanup time by 40\%.
+  \item Reported precision, recall, F1-score, and latency so the team could decide what to ship.
+\end{itemize}
+
+\entry{Web Development Intern, Frontend}{May 2024 to July 2024}
+{PLASMID}{India}
+\begin{itemize}
+  \item Built HTML5, CSS3, and JavaScript pages with mobile-first layout and cross-browser checks.
+  \item Delivered 4+ reusable UI components and documented usage for desktop and mobile.
+\end{itemize}
+
+\section{Projects}
+\entry{\href{https://github.com/daniyah-rehman}{Artisans Marketplace Backend}}{Node.js, Express.js, MongoDB, REST APIs, JWT}
+{User accounts, product data, and transaction APIs}{}
+\begin{itemize}
+  \item Implemented REST CRUD APIs with JWT login, input validation, and structured error messages for support-style debugging.
+  \item Modeled MongoDB schemas for users, profiles, products, and transactions for 1,000+ concurrent users.
+\end{itemize}
+
+\entry{ATS Resume Intelligence Tool}{Python, Streamlit, NLP, Generative AI, spaCy}
+{Job-description match scoring and keyword guidance}{}
+\begin{itemize}
+  \item Built an AI analyzer that scores resume-to-job-description fit at 85\% role-fit accuracy and explains missing keywords.
+\end{itemize}
+
+\entry{ConverseX}{Generative AI, WebRTC, Miro API}
+{Post-meeting notes, transcript, and whiteboard}{}
+\begin{itemize}
+  \item Combined live audio, transcription, and Miro boards for client-style follow-up; Breakthrough Category win at LinkedIn CoachIn Hackathon 2025.
+\end{itemize}
+
+\section{Education}
+\entry{Indira Gandhi Delhi Technical University for Women (IGDTUW)}{August 2023 to May 2027}
+{Bachelor of Technology, Electronics and Communication Engineering (AI Specialization)}{New Delhi}
+\noindent CGPA: 9.28 / 10.00 \quad Class XII: 92\% \quad Class X: 90\%\\[1pt]
+\noindent Coursework: Data Structures, Algorithms, Operating Systems, Computer Networks, Database Systems, Artificial Intelligence, Machine Learning
+
+\section{Certifications and Awards}
+\begin{itemize}
+  \item OCI Generative AI Professional (2025): LLMs, RAG, prompt engineering, enterprise AI workflows.
+  \item LinkedIn CoachIn Mentee (2025): Top 80 of 100,000+ applicants.
+  \item LinkedIn CoachIn Hackathon Winner (2025), Breakthrough Category, ConverseX.
+  \item Flipkart Grid 8.0 Semi-Finalist; ATF Stage-1 (2024): Top 20\% of 20,000+ candidates.
+\end{itemize}
+
+\end{document}
